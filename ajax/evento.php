@@ -9,7 +9,7 @@ $id = $_GET['id'];
 
 if(!is_numeric($id))
 {
-	exit("URL INVALIDA");
+	exit("URL INVALIDA: VERIFIQUE URL");
 }
 
 $c = new Conectar();

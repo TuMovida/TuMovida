@@ -1,0 +1,187 @@
+#eventos{
+	padding: 10px;
+}
+#eventos .diaTitle{
+	background-color: black;
+	border-radius: 4px;
+	color: white;
+	font-size: 26px;
+	height: 35px;
+	overflow: hidden;
+	vertical-align: middle;
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+#eventos .diaTitle .diaTitleFlecha{
+	color: black;
+	position: absolute;
+	margin-left: 10px;
+}
+#eventos .diaTitle:hover .diaTitleFlecha{
+	color: white;
+}
+#eventos .diaTitle:hover{
+	background: #06BBFF;
+	box-shadow: 0px 0px 10px black;
+	cursor: pointer;
+}
+#eventos .diaTitle .diaTitleFecha{
+	background: url("../images/ico_eventos.png") no-repeat;
+	color: white;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	margin-right: 4px;
+	height: 24px;
+	padding-top: 7px;
+	vertical-align: middle;
+	width: 24px;
+}
+#eventos .eventosDia{
+	display: inline-block;
+	vertical-align: top;
+	width: 70%;
+}
+#eventos .eventosDia:hover{
+	cursor: pointer;
+}
+#eventos .eventosDiaLocales{
+	display: inline-block;
+	vertical-align: top;
+	width: 29%;
+}
+#eventos .evento{
+	border-bottom: solid 1px #DCDCDC;
+	padding: 4px;
+	text-align: left;
+}
+#eventos .eventoImagen, #eventos .eventoInfo{
+	color: #666;
+	display: inline-block;
+	vertical-align: top;
+}
+#eventos .eventoImagen{
+	border: 1px solid #DCDCDC;
+	width: 200px;
+	height: 100px;
+	position: relative;
+	overflow: hidden;
+}
+#eventos .eventoInfo{
+	width: 350px;
+}
+#eventos .eventoImagen img{
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    width: 200px;
+}
+#eventos .evento:hover .eventoImagen img{
+	left: 0px;
+	position: absolute;
+	top: -40px;
+}
+#eventos .eventosDiaLocales{
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	margin: 4px 0px 4px 4px;
+	padding-bottom: 18px;
+	position: relative;
+}
+#eventos .eventosDiaLocales h4{
+	color: #424242;
+	margin: 4px;
+}
+#eventos .eventosDiaLocales ul li{
+	display: inline-block;
+	padding: 4px;
+}
+#eventos .eventosDiaLocales ul a{
+	background: #DCDCDC;
+	border-radius: 4px;
+	padding: 4px;
+	color: rgb(87, 87, 87);
+	font-size: 14px;
+	text-decoration: none;
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+}
+#eventos .eventosDiaLocales ul a:hover{
+	background: rgb(195, 195, 195);
+	color: rgb(105, 105, 105);
+}
+#eventos .eventosDiaLocales ul a img{
+	height: 14px;
+	margin-right: 4px;
+}
+#eventos .eventosDiaLocales a.ver-mas{
+	color: #424242;
+	font-size: 12px;
+	text-align: right;
+	position: absolute;
+	right: 2px;
+	text-decoration: none;
+}
+#eventos .eventosDiaLocales a.ver-mas:hover{
+	border-bottom: 1px solid #999999;
+}
+.local-verMas{
+	border: 1px solid whiteSmoke;
+	display: inline-block;
+	height: 100px;
+	margin: 2px;
+	position: relative;
+	overflow: hidden;
+	vertical-align: top;
+	width: 100px;
+}
+.local-verMas img{
+	position: relative;
+	min-width: 100px;
+	min-height: 100px;
+}
+.local-verMas span{
+	background: rgba(0, 0, 0, 0.8);
+	color: rgb(200,200,200);
+	display: block;
+	left: 0px;
+	font-family: 'Calibri', sans-serif;
+	position: absolute;
+	padding: 4px 0px 0px 4px;
+	top: 0px;
+	width: 100px;
+	transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+}
+.local-verMas:hover span{
+	color: white;
+	cursor: pointer;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 100px;
+	height: 100px;
+}
+.longLocal, .longLocal span, .longLocal img, .longLocal:hover span{
+	width: 205px;
+}
+.verLocales{
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0.6) 80%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(80%,rgba(255,255,255,0.6)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0.6) 80%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(255,255,255,0.6) 80%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(255,255,255,0.6) 80%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(left,  rgba(255,255,255,0.6) 80%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+	margin-bottom: 100px;
+	padding: 10px;
+	width: 40%;
+	max-height: 90%;
+	overflow: auto;
+}

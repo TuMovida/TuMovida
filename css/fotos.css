@@ -1,0 +1,231 @@
+#fotos{
+	text-align: left;
+	overflow: hidden;
+}
+#fotos .fotoAlbum{
+	border-bottom: solid 1px #E9E9E9;
+	cursor: pointer;
+	display: block;
+	margin: 0 10px 0 10px;
+	padding: 10px;
+	overflow: hidden;
+}
+#fotos .fotoAlbumImageGrande{	
+	border: solid 1px #DDD;
+	border-radius: 4px;
+	display: inline-block;
+	height: 220px;
+	padding: 4px;
+	position: relative;
+	padding: 4px;
+	width: 30%;
+	overflow: hidden;
+}
+#fotos .fotoAlbumImageGrande:hover{
+	background: #DDD;
+}
+#fotos .fotoAlbumImageGrande div{
+	background: whiteSmoke;
+	border-radius: 4px;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+#fotos .fotoAlbumImageGrande img{
+	min-width: 100%;
+	max-height: 100%;
+}
+#fotos .fotosAlbumRightSide{
+	display: inline-block;
+	height: 228px;
+	overflow: hidden;
+	padding-left: 20px;
+	vertical-align: top;
+	width: 55%;
+}
+#fotos .fotoAlbumImage{
+	display: inline-block;
+	padding-right: 4px;
+	max-height: 130px;
+	overflow: hidden;
+}
+#fotos .fotoAlbumImage img{
+	border-radius: 4px;
+	border: solid 1px #DDD;
+	padding: 4px;
+	width: 100px;
+}
+#fotos .fotoAlbumImage img:hover{
+	background: #DDD;
+}
+#fotos .fotoAlbum-verMasArrow{
+	background: url("../images/flecha-derecha.png") no-repeat;
+	display: inline-block;
+	width: 90px;
+	height: 228px;
+	opacity: 0.4;
+	-moz-opacity: 0.4;
+	filter:alpha(opacity=0.4);
+	position: absolute;
+}
+#fotos .fotoAlbum:hover .fotoAlbum-verMasArrow{
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=1);
+}
+
+#album{
+}
+#album .albumInfo{
+	background-color: whiteSmoke;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	margin: 10px 10px 20px 10px;
+	padding: 2px;
+}
+#album .albumInfo .albumInfoMenu{
+	display: inline-block;
+	width: 33%;
+}
+#album .albumInfo .albumInfoContent{
+	border-left: 1px solid #DDD;
+	color: #999;
+	display: inline-block;
+	font-size: 12px;
+	text-align: left;
+	width: 66%;
+}
+#album .albumInfo .albumInfoContent *{
+	padding: 10px;
+}
+#album .album-Foto{
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	box-shadow: 0 0 4px #DDD;
+	display: inline-block;
+	height: 150px;
+	margin: 4px;
+	padding: 4px;
+	position: relative;
+	overflow: hidden;
+	width: 250px;
+}
+#album .album-Foto a{
+	display: block;
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+}
+#album .album-Foto a img{
+	max-height: 250px;
+	max-width: 350px;
+	min-height: 150px;
+	min-width: 250px;
+}
+.photoDisplay{
+	background: black;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	vertical-align: top;
+	width: 70%; 
+}
+.photoDisplay img{
+	max-height: 100%;
+	max-width: 100%;
+}
+.photoDisplay .photoDisplayNext,
+.photoDisplay .photoDisplayPrev{
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100px;
+}
+.photoDisplay .photoDisplayPrev{
+	left: 0;
+}
+.photoDisplay .photoDisplayNext{
+	right: 0;
+}
+.photoDisplay:hover .photoDisplayNext{
+	background: rgba(0, 0, 0, 0.2) url("../images/flecha_n.png") no-repeat center center;
+}
+.photoDisplay .photoDisplayNext:hover{
+	background: rgba(0, 0, 0, 0.4) url("../images/flecha_n.png") no-repeat center center;
+}
+.photoDisplay:hover .photoDisplayPrev{
+	background: rgba(0, 0, 0, 0.2) url("../images/flecha_b.png") no-repeat center center;
+}
+.photoDisplay .photoDisplayPrev:hover{
+	background: rgba(0, 0, 0, 0.4) url("../images/flecha_b.png") no-repeat center center;
+}
+.photoDisplayRight{
+	color: black;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	width: 30%;
+}
+.photoDisplayRight .comentariosFoto{
+	padding: 10px;
+}
+.photoDisplayRight .nuevoComentarioFoto{
+	background: white;
+	border: 1px solid #CFCFCF;
+	border-radius: 4px;
+	padding: 4px;
+	margin-bottom: 5px;
+}
+.photoDisplayRight .nuevoComentarioFotoFocus{
+	box-shadow: 0 0 10px #CFCFCF;
+}
+.photoDisplayRight .comentariosFoto .comentariosFotoMenuAcciones{
+	margin-bottom: 10px;
+}
+.photoDisplayRight .nuevoComentarioFoto textarea{
+	font-family: 'Arial', sans-serif;
+	border: none;
+	width: 100%;
+}
+.photoDisplayRight .nuevoComentarioFoto button{
+	width: 100%;
+}
+.photoDisplayRight .comentariosFoto .showcomments{
+	background: rgb(250,250,250);
+	border-radius: 4px;
+	padding: 4px;
+	max-height: 100%;
+	overflow-y: auto;
+}
+.photoDisplayRight .comentariosFoto .showcomments .entradaComentario{
+	border-bottom: 1px dotted #DDD;
+	color: #777;
+	display: block;
+	font-size: 12px;
+	padding: 2px;
+}
+.photoDisplayRight .comentariosFoto .showcomments .entradaComentario .usuarioComentario{
+	display: inline-block;
+	max-width: 50px;
+	margin-right: 10px;
+	padding: 2px;
+	vertical-align: top;
+	width: 10%;
+}
+.photoDisplayRight .comentariosFoto .showcomments .entradaComentario .usuarioComentario img{
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	width: 100%;
+	vertical-align: top;
+}
+.photoDisplayRight .comentariosFoto .showcomments .entradaComentario a,
+.photoDisplayRight .comentariosFoto .showcomments .entradaComentario a:visited{
+	color:#06BBFF;
+	text-decoration: none;
+	padding-right: 4px;
+}
+.photoDisplayRight .comentariosFoto .showcomments .entradaComentario .textoComentario{
+	display: inline-block;
+	max-width: 85%;
+}

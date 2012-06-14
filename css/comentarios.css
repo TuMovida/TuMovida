@@ -1,0 +1,86 @@
+#comentariosPagina{
+	display: block;
+	/*width: 100%;*/
+	margin-top: 10px;
+	padding: 0px 10px 0px 10px;
+}
+#comentariosPagina .nuevoComentario{
+	border: 1px solid #CFCFCF;
+	border-radius: 4px;
+	padding: 4px;
+	position: relative;
+	margin-bottom: 5px;
+}
+#comentariosPagina .nuevoComentario .noLogged{
+	color: white;
+	display: none;
+	height: 80px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+#comentariosPagina .nuevoComentario .noLogged p{
+	display: block;
+	background: rgba(120, 120, 120, 0.6);
+	border-radius: 4px;
+	height: 80px;
+	margin: 0;
+	text-align: center;
+	overflow: hidden;
+}
+#comentariosPagina .nuevoComentario .noLogged p a{
+	border-radius: 10px;
+	color: white;
+	display: inline-block;
+	width: 49%;
+	height: 20px;
+	margin: 2px;
+	padding: 27px 0px;
+	text-decoration: none;
+}
+#comentariosPagina .nuevoComentario textarea{
+	font-family: 'Arial', sans-serif;
+	border: none;
+	width: 100%;
+}
+#comentariosPagina .nuevoComentarioFocus{
+	box-shadow: 0 0 10px #CFCFCF;
+}
+#comentariosPagina .nuevoComentario button{
+	width: 100%;
+}
+#comentariosPagina .showcomments{
+	/*margin: 10px;*/
+}
+#comentariosPagina .showcomments .entradaComentario{
+	display: block;
+	padding: 4px;
+}
+#comentariosPagina .showcomments .usuarioComentario{
+	display: inline-block;
+	text-align: center;
+}
+#comentariosPagina .showcomments .usuarioComentario img{
+	border: 1px solid #CFCFCF;
+	border-radius: 4px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+	display: block;
+	height: 46px;
+	width: 46px;
+}
+#comentariosPagina .showcomments .usuarioComentario span{
+	font-weight: bold;
+}
+#comentariosPagina .showcomments .textoComentario{
+	background: whiteSmoke;
+	border-radius: 0px 8px 8px 8px;
+	display: inline-block;
+	font-style: italic;
+	margin-left: 10px;
+	min-height: 50px;
+	width: 85%;
+	word-wrap: break-word;
+	padding: 4px;
+	vertical-align: top;
+}

@@ -1,0 +1,254 @@
+[20-Sep-2011 10:51:45] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 45
+[20-Sep-2011 10:51:45] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[20-Sep-2011 10:51:45] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[20-Sep-2011 10:51:45] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[20-Sep-2011 10:51:45] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[20-Sep-2011 10:51:45] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[22-Sep-2011 16:42:31] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 45
+[22-Sep-2011 16:42:31] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[22-Sep-2011 16:42:31] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[22-Sep-2011 16:42:31] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[22-Sep-2011 16:42:31] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[22-Sep-2011 16:42:31] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[22-Sep-2011 16:42:44] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 45
+[22-Sep-2011 16:42:44] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[22-Sep-2011 16:42:44] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[22-Sep-2011 16:42:44] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[22-Sep-2011 16:42:44] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[22-Sep-2011 16:42:44] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[22-Sep-2011 16:42:49] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 45
+[22-Sep-2011 16:42:49] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[22-Sep-2011 16:42:49] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[22-Sep-2011 16:42:49] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[22-Sep-2011 16:42:49] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[22-Sep-2011 16:42:49] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[22-Sep-2011 16:42:50] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 45
+[22-Sep-2011 16:42:50] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[22-Sep-2011 16:42:50] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[22-Sep-2011 16:42:50] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[22-Sep-2011 16:42:50] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[22-Sep-2011 16:42:50] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[22-Sep-2011 16:42:59] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 45
+[22-Sep-2011 16:42:59] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[22-Sep-2011 16:42:59] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[22-Sep-2011 16:42:59] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[22-Sep-2011 16:42:59] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[22-Sep-2011 16:42:59] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[22-Sep-2011 16:43:00] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 45
+[22-Sep-2011 16:43:00] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[22-Sep-2011 16:43:00] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[22-Sep-2011 16:43:00] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[22-Sep-2011 16:43:00] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[22-Sep-2011 16:43:00] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[22-Sep-2011 17:21:59] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 45
+[22-Sep-2011 17:21:59] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[22-Sep-2011 17:21:59] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[22-Sep-2011 17:21:59] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[22-Sep-2011 17:21:59] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[22-Sep-2011 17:21:59] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[23-Sep-2011 09:20:19] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 45
+[23-Sep-2011 09:20:19] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[23-Sep-2011 09:20:19] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 09:20:19] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 09:20:19] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[23-Sep-2011 09:20:19] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[23-Sep-2011 09:21:35] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 45
+[23-Sep-2011 09:21:35] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[23-Sep-2011 09:21:35] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 09:21:35] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 09:21:35] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[23-Sep-2011 09:21:35] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[23-Sep-2011 09:21:44] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 45
+[23-Sep-2011 09:21:44] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[23-Sep-2011 09:21:44] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 09:21:44] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 09:21:44] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[23-Sep-2011 09:21:44] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[23-Sep-2011 09:23:09] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 45
+[23-Sep-2011 09:23:09] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[23-Sep-2011 09:23:09] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 09:23:09] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 09:23:09] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[23-Sep-2011 09:23:09] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[23-Sep-2011 09:24:28] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 45
+[23-Sep-2011 09:24:28] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[23-Sep-2011 09:24:28] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 09:24:28] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 09:24:28] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[23-Sep-2011 09:24:28] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[23-Sep-2011 10:14:51] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 45
+[23-Sep-2011 10:14:51] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[23-Sep-2011 10:14:51] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 10:14:51] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 10:14:51] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[23-Sep-2011 10:14:51] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[23-Sep-2011 10:15:12] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 45
+[23-Sep-2011 10:15:12] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[23-Sep-2011 10:15:12] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 10:15:12] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 10:15:12] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[23-Sep-2011 10:15:12] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[23-Sep-2011 10:15:18] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 45
+[23-Sep-2011 10:15:18] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[23-Sep-2011 10:15:18] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 10:15:18] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 10:15:18] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[23-Sep-2011 10:15:18] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[23-Sep-2011 10:15:26] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 45
+[23-Sep-2011 10:15:26] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[23-Sep-2011 10:15:26] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 10:15:26] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 10:15:26] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[23-Sep-2011 10:15:26] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[23-Sep-2011 10:15:37] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 45
+[23-Sep-2011 10:15:37] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[23-Sep-2011 10:15:37] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 10:15:37] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 10:15:37] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[23-Sep-2011 10:15:37] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[23-Sep-2011 10:41:09] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: YES) in /home/tumovida/public_html/rp/index.php on line 45
+[23-Sep-2011 10:41:09] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[23-Sep-2011 10:41:09] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 10:41:09] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 10:41:09] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[23-Sep-2011 10:41:09] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[23-Sep-2011 10:41:49] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: YES) in /home/tumovida/public_html/rp/index.php on line 45
+[23-Sep-2011 10:41:49] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 46
+[23-Sep-2011 10:41:49] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 10:41:49] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 51
+[23-Sep-2011 10:41:49] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[23-Sep-2011 10:41:49] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[23-Sep-2011 10:45:05] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[23-Sep-2011 10:45:05] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[23-Sep-2011 10:47:59] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[23-Sep-2011 10:47:59] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[23-Sep-2011 10:48:04] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 52
+[23-Sep-2011 10:48:04] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 53
+[23-Sep-2011 14:50:47] PHP Fatal error:  Call to a member function Usuarios() on a non-object in /home/tumovida/public_html/rp/index.php on line 43
+[23-Sep-2011 14:52:32] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 57
+[26-Sep-2011 16:37:23] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 93
+[26-Sep-2011 16:37:23] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 94
+[26-Sep-2011 16:37:23] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 96
+[26-Sep-2011 16:37:23] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 96
+[26-Sep-2011 16:37:23] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 97
+[26-Sep-2011 16:37:23] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 107
+[26-Sep-2011 16:37:23] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 108
+[26-Sep-2011 16:37:23] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 110
+[26-Sep-2011 16:37:23] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 110
+[26-Sep-2011 16:45:22] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 93
+[26-Sep-2011 16:45:22] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 94
+[26-Sep-2011 16:45:22] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 96
+[26-Sep-2011 16:45:22] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 96
+[26-Sep-2011 16:45:22] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 97
+[26-Sep-2011 16:45:22] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 107
+[26-Sep-2011 16:45:22] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 108
+[26-Sep-2011 16:45:22] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 110
+[26-Sep-2011 16:45:22] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 110
+[26-Sep-2011 16:54:42] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 93
+[26-Sep-2011 16:54:42] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 94
+[26-Sep-2011 16:54:43] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 96
+[26-Sep-2011 16:54:43] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 96
+[26-Sep-2011 16:54:43] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 97
+[26-Sep-2011 16:54:43] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 107
+[26-Sep-2011 16:54:43] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 108
+[26-Sep-2011 16:54:43] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 110
+[26-Sep-2011 16:54:43] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 110
+[26-Sep-2011 16:57:33] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 93
+[26-Sep-2011 16:57:33] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 94
+[26-Sep-2011 16:57:33] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 96
+[26-Sep-2011 16:57:33] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 96
+[26-Sep-2011 16:57:33] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 97
+[26-Sep-2011 16:57:33] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 107
+[26-Sep-2011 16:57:33] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 108
+[26-Sep-2011 16:57:33] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 110
+[26-Sep-2011 16:57:33] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 110
+[26-Sep-2011 16:59:10] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 93
+[26-Sep-2011 16:59:10] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 94
+[26-Sep-2011 16:59:10] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 96
+[26-Sep-2011 16:59:10] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 96
+[26-Sep-2011 16:59:10] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 97
+[26-Sep-2011 16:59:10] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 107
+[26-Sep-2011 16:59:10] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 108
+[26-Sep-2011 16:59:10] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 110
+[26-Sep-2011 16:59:10] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 110
+[26-Sep-2011 17:34:24] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 94
+[26-Sep-2011 17:34:24] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 95
+[26-Sep-2011 17:34:24] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 97
+[26-Sep-2011 17:34:24] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 97
+[26-Sep-2011 17:34:24] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 98
+[26-Sep-2011 17:34:24] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/tumovida/public_html/rp/index.php on line 108
+[26-Sep-2011 17:34:24] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 109
+[26-Sep-2011 17:34:24] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 110
+[26-Sep-2011 17:34:24] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 112
+[26-Sep-2011 17:34:24] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 112
+[26-Sep-2011 17:36:28] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 94
+[26-Sep-2011 17:36:28] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 95
+[26-Sep-2011 17:36:28] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 97
+[26-Sep-2011 17:36:28] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 97
+[26-Sep-2011 17:36:28] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 98
+[26-Sep-2011 17:36:28] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/tumovida/public_html/rp/index.php on line 108
+[26-Sep-2011 17:36:28] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 109
+[26-Sep-2011 17:36:28] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 110
+[26-Sep-2011 17:36:28] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 112
+[26-Sep-2011 17:36:28] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 112
+[26-Sep-2011 17:39:01] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 94
+[26-Sep-2011 17:39:01] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 95
+[26-Sep-2011 17:39:01] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 97
+[26-Sep-2011 17:39:01] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 97
+[26-Sep-2011 17:39:01] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 98
+[26-Sep-2011 17:39:01] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/tumovida/public_html/rp/index.php on line 108
+[26-Sep-2011 17:39:01] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 109
+[26-Sep-2011 17:39:01] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 110
+[26-Sep-2011 17:39:01] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 112
+[26-Sep-2011 17:39:01] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 112
+[26-Sep-2011 17:46:43] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 94
+[26-Sep-2011 17:46:43] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 95
+[26-Sep-2011 17:46:43] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 97
+[26-Sep-2011 17:46:43] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 97
+[26-Sep-2011 17:46:43] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 98
+[26-Sep-2011 17:46:43] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/tumovida/public_html/rp/index.php on line 108
+[26-Sep-2011 17:46:43] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 109
+[26-Sep-2011 17:46:43] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 110
+[26-Sep-2011 17:46:43] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 112
+[26-Sep-2011 17:46:43] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 112
+[26-Sep-2011 17:49:18] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 94
+[26-Sep-2011 17:49:18] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 95
+[26-Sep-2011 17:49:18] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 97
+[26-Sep-2011 17:49:18] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 97
+[26-Sep-2011 17:49:18] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 98
+[26-Sep-2011 17:49:18] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/tumovida/public_html/rp/index.php on line 108
+[26-Sep-2011 17:49:18] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 109
+[26-Sep-2011 17:49:18] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 110
+[26-Sep-2011 17:49:18] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 112
+[26-Sep-2011 17:49:18] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 112
+[26-Sep-2011 17:58:52] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 94
+[26-Sep-2011 17:58:52] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 95
+[26-Sep-2011 17:58:52] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 97
+[26-Sep-2011 17:58:52] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 97
+[26-Sep-2011 17:58:52] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 98
+[26-Sep-2011 17:58:52] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/tumovida/public_html/rp/index.php on line 108
+[26-Sep-2011 17:58:52] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 109
+[26-Sep-2011 17:58:52] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 110
+[26-Sep-2011 17:58:52] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 112
+[26-Sep-2011 17:58:52] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 112
+[26-Sep-2011 18:01:00] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 95
+[26-Sep-2011 18:01:00] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 96
+[26-Sep-2011 18:01:00] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 98
+[26-Sep-2011 18:01:00] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 98
+[26-Sep-2011 18:01:00] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 99
+[26-Sep-2011 18:01:00] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 109
+[26-Sep-2011 18:01:00] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'tumovida'@'localhost' (using password: NO) in /home/tumovida/public_html/rp/index.php on line 112
+[26-Sep-2011 18:01:00] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/tumovida/public_html/rp/index.php on line 112
+[26-Sep-2011 18:51:49] PHP Warning:  mysql_select_db(): 3 is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 114
+[26-Sep-2011 18:51:49] PHP Warning:  mysql_query(): 3 is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 116
+[26-Sep-2011 19:00:39] PHP Warning:  mysql_select_db(): 3 is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 114
+[26-Sep-2011 19:00:39] PHP Warning:  mysql_query(): 3 is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 116
+[26-Sep-2011 19:03:05] PHP Warning:  mysql_select_db(): 3 is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 114
+[26-Sep-2011 19:03:05] PHP Warning:  mysql_query(): 3 is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 116
+[26-Sep-2011 19:09:44] PHP Warning:  mysql_select_db(): 3 is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 114
+[26-Sep-2011 19:09:44] PHP Warning:  mysql_query(): 3 is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 116
+[26-Sep-2011 19:22:32] PHP Warning:  mysql_select_db(): 3 is not a valid MySQL-Link resource in /home/tumovida/public_html/rp/index.php on line 122
+[26-Sep-2011 19:22:32] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 124
+[26-Sep-2011 19:57:03] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 123
+[26-Sep-2011 19:58:51] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 123
+[26-Sep-2011 20:01:02] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/tumovida/public_html/rp/index.php on line 121

@@ -1,0 +1,104 @@
+#promo{
+	display: block;
+	color: rgb(60, 60, 60);
+	font-size: 12px;
+	margin: 0;
+	padding: 10px 0px 10px 0px;
+	position: relative;
+	text-align: left;
+	width: 100%;
+}
+#promo div.promo-leftSide{
+	display: inline-block;
+	height: 400px;
+	margin: 0;
+	position: relative;
+	text-align: center;
+	vertical-align: top;
+	width: 250px;
+	overflow: hidden;
+}
+#promo div.promo-leftSide img{
+	border: 5px solid transparent;
+	width: 90%;
+	margin-top: -5px;
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+#promo div.promo-leftSide:hover{
+	overflow: visible;
+	z-index: 800;
+}
+#promo div.promo-leftSide:hover img{
+	border: 5px solid rgba(0, 0, 0, 0.4);
+	border-radius: 4px;
+}
+#promo div.promo-rightSide{
+	display: inline-block;
+	margin: 0;
+	position: relative;
+	vertical-align: top;
+	width: 70%;
+}
+#promo div.promo-rightSide span.nombre{
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+}
+#promo div.promo-rightSide .promo-menuAcciones{
+	background: whiteSmoke;
+	border: 1px solid #CFCFCF;
+	border-radius: 2px;
+	display: block;
+	margin-bottom: 5px;
+	padding: 4px;
+}
+#promo div.promo-rightSide span.promoLabel{
+	color: #838383;
+	display: block;
+	font-size: 0.9em;
+	font-weight: bold;
+	margin: 4px 0px 2px 0px;
+	text-transform: uppercase;
+}
+#promo div.promo-rightSide .descripcion{
+	max-height: 250px;
+	overflow: auto;
+}
+#promo div.promo-rightSide .descripcionContent{
+	/*font-size: 10px;*/
+}
+#promo div.promo-rightSide .promoCondicion{
+	display: block;
+}
+#mostrarMapa{
+	background: url("../images/map_ico.png");
+	display: inline-block;
+	height: 27px;
+	margin-top: -3px;
+	vertical-align: middle; 
+	width: 27px;
+}
+#mostrarMapa:hover{
+	background: url("../images/map_ico_h.png");
+	cursor: pointer;
+}
+#promo .promoValor{
+	height: 100px;
+}
+#promo .promoValor .precioValorImg{
+	background: url("../images/icons/preciopromo.png") no-repeat;
+	display: block;
+	height: 100px;
+	margin: 0px auto 0px auto;
+	position: relative;
+	width: 83px;
+}
+#promo .promoValor .precioValorImg span{
+	color: white;
+	font-size: 20px;
+	left: 18px;
+	position: absolute;
+	top: 35px;	
+}

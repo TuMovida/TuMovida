@@ -1,0 +1,320 @@
+@charset "UTF-8";
+/* CSS Reset */
+#header img,
+dl, dt, dd, ol, ul, li, form, fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+*:focus {outline: none;}
+::selection{background: black; color: white;};
+head{
+	height: 100%;
+}
+body{
+	background-color:#879eae;
+	color: white;
+	min-height: 100%;
+	min-width: 709px;
+	font-size: 16px;
+	font-family: 'Helvatica', 'arial', sans-serif;
+	margin: 40px 0px 0px 0px;
+	padding: 0px;
+}
+#hMenu{
+	background: rgb(90,90,90) url("../images/hbg.png") repeat-x;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+	color: rgb(240, 240, 240);
+	display: none;
+	height: 40px;
+	margin: 0px auto;
+	left:0px;
+	position: absolute;	
+	top: 0px;
+	width: 100%;
+	z-index: 999;
+}
+@media screen{
+	body>div#hMenu{
+		position: fixed;
+	}
+}
+
+#hMenu #logo{
+	vertical-align:top;
+	display: inline-block;
+	margin:10px 0px 0px 5px;
+	height: 41px;
+	width:170px;
+}
+#logoTM img{
+	margin:40px 10px 20px 10px;
+}
+#hMenu h1{
+	margin: 0px 0px 0px 10px;
+	padding: 0px;
+	font-size: 22px;
+}
+#hMenu #navegacion{
+	display: inline-block;
+	height: 100%;
+	width: 300px;
+}
+#hMenu #navegacion li{
+	display: inline-block;
+	padding: 5px;
+}
+#hMenu #navegacion li:hover{
+	/*background-color: rgba(255, 255, 255, 0.4);
+	border-top-color: rgb(155, 0, 170);
+	border-top-style: solid;
+	border-top-width: 5px;
+	color: white;
+	cursor: pointer;*/
+}
+#hMenu #usuario{
+	text-align:right;
+	display: inline-block;
+	float: right;
+	height: 100%;
+	width: 200px;
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+
+#hMenu #usuario li{
+	/*border-top-color: transparent;
+	border-top-style: solid;
+	border-top-width: 11px;
+	border-bottom-color: transparent;
+	border-bottom-style: solid;
+	border-bottom-width: 6px;
+	border-left-color: transparent;
+	border-left-style: solid;
+	border-left-width: 5px;
+	border-right-color: transparent;
+	border-right-style: solid;
+	border-right-width: 5px;
+	background-color:#222;*/
+	display: inline-block;
+	font-size: 12px;
+	margin-top:8px;
+	padding-left:5px;
+	padding-right:5px;
+	line-height:30px;
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+#hMenu #usuario li:hover{
+	/*background-color: #333;
+	border-bottom-color:#0CF;
+	border-bottom-style: solid;
+	border-bottom-width: 6px;
+	color:#FFF;*/
+	border-bottom:2px solid #0CF;
+	cursor: pointer;
+}	
+#destacados{
+	background-color: black;
+	box-shadow: 0px 0px 10px rgb(0,0,0);
+	display: block;
+	height: 271px;
+	margin: 0px auto;
+	padding: 0px auto;
+	position: relative;
+}
+.destacado_imagen{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.destacado_descripcion{
+	background: rgba(0,0,0,0.6);
+	bottom: 0px;
+	right: 20px;
+	padding: 10px;
+	position: absolute;
+	width: 400px;
+}
+.destacado_descripcion span.destacado_titulo{
+	display: block;
+	font-weight: bold;	
+}
+#destacados #logoTM{	
+	background:url("../images/lbg.png");
+	display: none;
+	height: 271px;
+	position: relative;
+	width: 169px;
+}
+#container{
+	background-image:url("../images/bbg.png");
+	background-repeat:repeat-x;
+	min-height:800px;
+	padding-top: 20px;
+	text-align: center;
+}
+#left{
+	display: inline-block;
+	width: 200px;
+}
+#right{
+	vertical-align: top;
+	display: inline-block;
+	width: 70%;
+}
+.moduloLeft{
+	background-color: #282828;
+	border-radius: 10px;
+	margin: 0px auto;
+	margin-bottom: 4px;
+	min-height: 250px;
+	text-align: left;
+	width: 100%;
+}
+strong.slash{
+	display:inline; font-size:24px; line-height:24px; 
+}
+strong.b{
+	color:#06BBFF;
+}
+strong.r{
+	color:#F0F;
+}
+strong.y{
+	color:#FF0;
+}
+.moduloRight{
+	background-color: white;
+	border-radius: 10px;
+	color: black;
+	margin: 0px 0px 4px 4px;
+	min-height: 685px;
+	/*max-height: 680px;*/
+	padding: 0px;
+	position: relative;
+	width: 100%;
+}
+.moduloLeft h2{
+	border-bottom: solid 1px #484848;
+	border-radius: 10px 10px 0px 0px;
+	color: white;
+	font-size: 20px;
+	margin: 0px 5px 10px 5px;
+	padding: 5px 0px 5px 5px;
+	text-shadow: 0px 0px 10px black;
+}
+.moduloLeft hr{
+	border-width: 1px;
+	border-color: rgb(210, 210, 210);
+	margin: 0px auto;
+	padding: 0px;
+	width: 80%;
+}
+.moduloRight h2{
+	background: #282828 url("../images/hbg.png") repeat-x;
+	border-radius: 10px 10px 0px 0px;
+	color: white;
+	font-size: 24px;
+	line-height:20px;
+	height: 24px;
+	padding: 5px 0px 8px 10px;
+	margin: 0px;
+	text-align: left;
+	text-shadow: 0px 0px 10px black;
+}
+.moduloRight h2 img{
+	display: inline-block;
+	height: 24px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+#main-overlayer{
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 10px;
+	display: none;
+	margin-left: 4px;
+	position: absolute;
+}
+
+#backfooter{
+	background:url("../images/fbg2.png");
+	background-repeat:repeat-x;
+	height:107px;
+	vertical-align:top;
+}
+#footer{
+	background:url("../images/fbg.png");
+	background-repeat:repeat-x;
+	color: white;
+	font-size: 0.8em;
+	margin: -100px auto;
+	min-height: 107px;
+	padding-top: 70px;
+	text-transform: uppercase;
+	text-align: center;
+	z-index:10;
+}
+#footercont{
+	background:#000;
+}
+#footer #footerL{
+	display: inline-block;
+	height: 150px;
+	margin: 0px auto;
+	text-align: left;
+	vertical-align: top;
+	width: 210px;
+}
+#footer #footerR{
+	border-left: solid 2px grey;
+	display: inline-block;
+	height: 150px;
+	margin: 0px 0px 0px 20px;
+	padding-left: 20px; 
+	text-align: left;
+	vertical-align: top;
+	width: 45%;
+}
+#footer #laEmpresa ul{
+	list-style:url(../images/list_style_2.png);
+}
+#footer #conoceMas{
+	margin-top: 10px;
+}
+#footer #conoceMas ul{
+	list-style:url(../images/list_style_1.png);
+}
+#footer ul a{
+	color:#FFF;
+	text-decoration:none;
+}
+#footer ul a:hover{
+	color:#FFF;
+	text-decoration:underline;
+}
+#footer h3{
+	font-size: 16px;
+	margin: 0px;
+	padding: 0px;
+}
+#footer ul{
+	margin-left: 15px;
+}
+#footer #footerR span{
+	display: block;
+	text-align: right;
+	text-transform: lowercase;
+	vertical-align: bottom;
+}
+#footer li{
+	margin:0px;
+	font-size:12px;
+}

@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+body {
+	background-color: rgb(70,70,70);
+	color: white; 
+	font-size: 16px; 
+	font-family: "Verdana", sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+h1{
+	background-color: whiteSmoke;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 0 120px rgb(40,40,40);
+	color: #666;
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 20px 0 15px 0;
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+#index{
+	color: rgb(40,40,40);
+	display: block;
+	width: 960px;
+	margin: auto;
+	padding: 0px 20px;
+	overflow: hidden;
+}
+a.elem{
+	border-radius: 10px;
+	box-shadow: inset 3px 3px 11px rgba(10,30,10,0.2);
+	box-shadow: 0 0 10px rgba(230, 230, 230, 0.5);
+	color: #333;
+	display: block;
+	height: 104px;
+	margin: 10px auto 10px auto;
+	position: relative;
+	width: 95%;
+}
+a.elem{
+background: rgb(252,255,244); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(252,255,244,1) 0%, rgba(223,229,215,1) 40%, rgba(179,190,173,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,255,244,1)), color-stop(40%,rgba(223,229,215,1)), color-stop(100%,rgba(179,190,173,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* IE10+ */
+background: linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
+}
+span.soy{
+	position: absolute; 
+	bottom: 10px;
+	right: 10px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+a.elem:hover span.soy{
+	color: white;
+}

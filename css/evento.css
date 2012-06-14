@@ -1,0 +1,78 @@
+#evento{
+	display: block;
+	color: rgb(60, 60, 60);	
+	font-size: 12px;
+	margin: 0;
+	padding: 10px 0px 10px 0px;
+	position: relative;
+	text-align: left;
+	width: 100%;
+}
+#evento div.evento-leftSide{
+	display: inline-block;
+	height: 400px;
+	margin: 0;
+	position: relative;
+	text-align: center;
+	vertical-align: top;
+	width: 250px;
+	overflow: hidden;
+}
+#evento div.evento-leftSide img{
+	border: 5px solid transparent;
+	width: 90%;
+	margin-top: -5px;
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+#evento div.evento-leftSide:hover{
+	overflow: visible;
+	z-index: 800;
+}
+#evento div.evento-leftSide:hover img{
+	border: 5px solid rgba(0, 0, 0, 0.4);
+	border-radius: 4px;
+}
+#evento div.evento-rightSide{
+	display: inline-block;
+	margin: 0;
+	position: relative;
+	vertical-align: top;
+	width: 70%;
+	overflow: hidden;
+}
+#evento div.evento-rightSide span.nombre{
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+}
+#evento div.evento-rightSide .evento-menuAcciones{
+	background: whiteSmoke;
+	border: 1px solid #CFCFCF;
+	border-radius: 2px;
+	display: block;
+	margin-bottom: 5px;
+	padding: 4px;
+}
+#evento div.evento-rightSide span.eventoLabel{
+	color: #838383;
+	display: block;
+	font-size: 0.9em;
+	font-weight: bold;
+	margin: 2px 0px 2px 0px;
+	text-transform: uppercase;
+}
+#evento div.evento-rightSide .descripcion{
+	max-height: 250px;
+	overflow: auto;
+}
+#evento div.evento-rightSide .descripcionContent{
+	/*font-size: 10px;*/
+}
+#evento div.evento-rightSide .staticMap{
+	cursor: pointer;
+	display: block;
+	margin: 10px auto 10px auto;
+	text-align: center;
+}

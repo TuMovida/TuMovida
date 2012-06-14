@@ -1,0 +1,144 @@
+.lqsv_entradas{/*
+	background: url("../images/lqsv_degradado.png") repeat-x;
+	background-position: center bottom;*/
+	margin: 0px;
+	padding:0px;
+	height: 203px;
+	overflow-y: hidden;
+	word-wrap: break-word;
+}
+.lqsv_entradas:hover{
+	height: auto;
+}
+.lqsv_entrada{
+	border-bottom: solid 1px #484848;
+	color: rgb(240, 255, 240);
+	display: block;
+	margin: 2px 5px 2px 5px;
+	padding-bottom: 2px;
+}
+.lqsv_entrada:hover{
+    cursor: pointer;
+}
+.lqsv_entrada:hover h4, .lqsv_entrada:hover .lqsv_fecha{
+	color: white;
+	text-shadow: 2px 2px 8px black;
+}
+.lqsv_entrada:hover .lqsv_img{
+	background-color: #656565;	
+}
+.lqsv_entrada .lqsv_img{
+	background-color: #484848;
+	border-radius: 2px;
+	display: inline-block;
+	/*height: 30px*/;
+	padding: 1px;
+	vertical-align: top;
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+.lqsv_entrada .lqsv_img img{
+	border-radius: 2px;
+	max-width: 30px;
+	margin: 1px;
+	vertical-align: middle;
+}
+.lqsv_data{
+	display: inline-block;	
+}
+.lqsv_entrada h4{
+	margin: 0px auto;
+	padding: 0px auto;
+	vertical-align-top;
+	max-width: 150px;
+}
+.lqsv_fecha{
+	/*display: block*/;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+}
+.calendar{
+	padding: 4px;
+	text-align: center;
+	width: 100%;
+}
+.calendar .calendar-day-head{
+	color: #F8F8FF;
+	padding-bottom: 6px;
+	text-shadow: 1px 1px 1px black;
+}
+.calendar tbody{
+	color: #DDD;
+	font-size: 12px;
+}
+.calendar tbody :first-child{
+	
+}
+.calendar tbody{
+	background: #333;
+	border: 1px solid black;
+	text-shadow: 1px 1px 1px black;
+}
+.calendar .day-number{
+	border-bottom: 1px solid transparent;
+	padding: 5px;
+	transition: all 0.15s;
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+}
+.calendar .no-events{
+	color: #999;
+}
+.calendar .day-number-hoy{
+	color: #06BBFF;
+}
+.calendar tbody tr:first-child{
+	border-radius: 10px;
+	border-spacing: 0px;
+}
+.calendar .day-number:hover{
+	background: rgba(55,75,82,1);
+	border-radius: 5px;
+	border-bottom: 1px solid #06BBFF;
+	cursor: pointer;
+}
+.calendar .no-events:hover{
+	background: url("../images/hbg.png");
+	border-bottom: 1px solid #999;
+	cursor: default;
+}
+.lqsvEvento{
+	display: block;
+	font-size: 12px;
+	padding: 2px 0px 2px 0px;
+}
+.lqsvEvento:hover{
+	background: whiteSmoke;
+}
+.lqsvEvento .lqsvEventoImg{
+	border: 1px solid #DDD;
+	display: inline-block;
+	padding: 2px;
+	height: 35px;
+	overflow: hidden;
+	vertical-align: top;
+	width: 35px;
+}
+.lqsvEvento .lqsvEventoImg img{
+	max-width: 100px; 
+	max-height: 100px;
+}
+.lqsvEvento .lqsvEventoTexto{
+	color: #454545;
+	display: inline-block;
+	margin-left: 8px;
+	padding: 2px;
+	text-decoration: none;
+	vertical-align: top;
+	width: 200px;
+}
+.lqsvEvento:hover .lqsvEventoTexto{
+	color: #333;
+}

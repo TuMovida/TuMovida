@@ -1,0 +1,155 @@
+#usuario{
+	padding-bottom: 4px;
+}
+#usuario .left_side, #usuario .right_side{
+	display: inline-block;
+	vertical-align: top;
+}
+#usuario .left_side{
+	margin-top: 10px;
+	width: 30%;
+}
+#usuario .left_side img{
+	border-radius: 4px;
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+	max-width: 90%;
+}
+#usuario .right_side{
+	width: 69%;
+}
+#usuario .right_side .user_information{
+	text-align: left;
+}
+#usuario .right_side .user_information_subheader{
+
+}
+#usuario .right_side .user_information_subheader h6{
+	border-bottom: 1px solid #EEE;
+	color: #8C8C8C;
+	display: block;
+	font-size: 17px;
+	font-variant: small-caps;
+	padding: 5px 2px 0px 0px;
+	margin: 5px 0px 5px 0px;
+}
+#usuario .right_side .user_information .user_information_row{
+	display: block;
+	font-size: 12px;
+}
+#usuario .right_side .user_information .user_information_row .user_information_label{
+	color: rgb(80,80,80);
+	display: inline-block;
+	font-weight: bold;
+	/*width: 150px;*/
+	width: 5px;
+}
+#usuario .right_side .user_information .user_information_row .user_information_dataDisplay{
+	color: rgb(60,60,60);
+	padding: 10px;
+	margin: 10px;
+}
+#usuario .right_side .user_information_comentarios,
+#usuario .right_side .user_information_asistencias,
+#usuario .user-footer{
+	background-color: whiteSmoke;
+	border-radius: 4px;
+	font-size: 12px;
+	margin-right: 2px;
+	text-align: center;
+}
+#usuario .right_side .user_information_comentarios 
+li.comentario{
+	border-bottom: 1px dotted #DDD;
+	display: block;
+	padding: 2px 14px 2px 14px;
+	text-align: left;
+	word-wrap: break-word;
+}
+#usuario .right_side .user_information_comentarios 
+li.comentario:hover{
+	background: rgba(255,255,255,0.4);
+}
+#usuario .right_side .user_information_comentarios 
+.comentario .nombrePagina{
+	display: block;
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-align: right;
+	width: 100%;
+}
+#usuario .right_side .user_information_comentarios 
+.comentario .nombrePagina a, #usuario .right_side .user_information_comentarios 
+.comentario .nombrePagina a:visited{
+	color: #06BBFF;
+}
+#usuario .right_side .user_information_comentarios 
+.comentario q{
+	letter-spacing: -1px;
+	quotes: none;
+}
+#usuario .right_side .user_information_asistencias li.asistenciaEvento{
+	background: #AAA;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	display: inline-block;
+	width: 150px;
+	height: 100px;
+	overflow: hidden;
+	position: relative;
+	margin: 2px;
+	vertical-align: top;
+}
+#usuario .right_side .user_information_asistencias li.asistenciaEvento img{
+	box-shadow: 1px 1px 2px black;
+	max-width: 150px;
+	position: relative;
+	opacity: 0.5;
+	transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+}
+#usuario .right_side .user_information_asistencias li.asistenciaEvento:hover img{
+	top: -50px;
+}
+#usuario .right_side .user_information_asistencias li.asistenciaEvento a{
+	background: url("../images/dottedGrind.png");
+	color: white;
+	left: 0px;
+	height: 100%;
+	font-size: 14px;
+	font-weight: bold;
+	position: absolute; 
+	padding-top: 20px;
+	top: 0px;
+	text-shadow: 0px 0px 5px black, 0px 0px 5px rgba(255,255,255,0.5);
+	text-decoration: none;
+	width: 100%;
+}
+span.conjunto-vacio{
+  	color: rgba(0,0,0,0.3);
+	background-color: rgba(82,96,117,0.5);
+	-webkit-background-clip: text;
+	font-family: inherit;
+  	font-weight: bold;
+  	font-size: 20px;
+  	line-height: 36px;
+  	text-rendering: optimizelegibility;
+	text-shadow: rgba(255,255,255,0.5) 0 5px 6px;
+}
+#usuario .user-footer{
+	margin: 10px 4px 0px 4px;
+	padding: 10px;
+	text-align: center;
+}
+#usuario .user-footer h6{
+  	color: rgba(0,0,0,0.3);
+	background-color: rgba(82,96,117,0.5);
+	-webkit-background-clip: text;
+	font-family: inherit;
+  	font-weight: bold;
+  	font-size: 20px;
+  	text-rendering: optimizelegibility;
+	text-shadow: rgba(255,255,255,0.5) 0 5px 6px;
+	margin: 0px;
+	text-align: left;
+}

@@ -1,0 +1,6 @@
+Nombre: 		'Prueba Total y Final' 
+Telefono: 		'123123' 
+Lugar: 		'asdads' 
+Fecha: 		'13/06/2012' 
+Descripcion: 		'asdasd' 
+

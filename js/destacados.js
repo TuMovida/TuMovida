@@ -1,3 +1,32 @@
+;(function($, window, undefined){
+	var Slide = function (elemento, opciones){
+		this.elemento = element;
+		this.opciones = opciones;
+		if (this.init){
+			this.init(opciones);
+		}
+	}
+	Slide.prototype = {
+		defecto: {
+			anterior: ".anterior",
+			posterior: ".posterior"
+		},
+		init: function(opciones){
+			this.config = $.extend({}, this.defecto, this.opciones);
+		}
+	}
+	$.fn.slide = function(opciones){
+		if (typeof opciones == "string"){
+			metodo = opciones; 
+			args = Array.prototype.slide.call(arguments, 1);
+				var slider = this.data('slide') ? 
+					this.data('slide') :
+					new Slide(this);
+		}
+	}
+	window.Slide = Slide;
+})(jQuery, window)
+
 var destacados = {
 	i: 0,
 	fxIn: 	250,
@@ -45,7 +74,6 @@ var destacados = {
 		}
 	}
 };
-
 $(document).on("ready", function(){
 	$(".destacado_imagen").hide();
 	$(".destacado_descripcion").hide();

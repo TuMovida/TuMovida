@@ -1,0 +1,99 @@
+#main #promociones{
+	color: black;	
+	padding-bottom: 10px;
+}
+#main #promociones li{
+	border-bottom: solid 1px #585858;
+	display: block;
+	/*padding: 10px;*/
+	padding: 0;
+	height: 126px;
+	text-align: left;
+	overflow: hidden;
+}
+#promociones li .promoA, 
+#promociones li .promoB, 
+#promociones li .promoC{
+	display: inline-block;
+	position: relative;
+	height: 126px;
+	vertical-align: top;
+}
+#promociones li .promoB{
+	margin: 10px 0px 0px -80px;
+	width: 40%;
+}
+#promociones li .promoC{
+	position: absolute; 
+	right: 0;
+	width: 100px;
+}
+#main #promociones li .promoImagen{
+	overflow: hidden;
+	position: relative;
+	width: 450px;
+}
+#main #promociones li .promoImagen img{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 360px;
+	transition: all 0.75s ease-in-out;
+    -webkit-transition: all 0.75s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+}
+#main #promociones li .promoImagen .promoImagenMask{
+	background: url("../images/promos_mask.png");
+	height: 126px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 226px;
+}
+#main #promociones li:hover .promoImagen img{
+	top: -150px;
+}
+.promoB h4{
+	color: rgb(30, 30, 30);
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Calibri', 'Arial', sans-serif;
+	font-width: 16px;
+	text-transform: uppercase;
+}
+#main #promociones li .promoDescripcion{
+	color: rgb(110, 110, 140);
+	height: 92px;
+	overflow: hidden;
+	font-size: 12px;
+}
+#promociones li .promoC .valor{
+	background: url("../images/ticket_bg.png") no-repeat;
+	height: 100px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	text-align: right;
+	width: 90px;
+}
+#promociones li .promoC .valor div{
+	color: white;
+	margin: 20px 20px 0px 0px;
+	font-weight: bold;
+	-webkit-transform: rotate(-28deg); 
+	-moz-transform: rotate(-28deg);	
+}
+#promociones li .promoC .ver-mas{
+	padding: 4px;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	text-transform: uppercase;
+}
+#promociones li .promoC .comprar{
+	padding: 4px;
+	position: absolute;
+	right: 80px;
+	bottom: 10px;
+	text-transform: uppercase;	
+}

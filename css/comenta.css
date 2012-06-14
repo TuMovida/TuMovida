@@ -1,0 +1,62 @@
+#comentarios{
+}
+#comenta_box{
+	height: 250px;
+	overflow: auto;
+	margin: 0px 10px 5px 5px;
+	padding-right: 5px;
+}
+.comenta_entrada{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-size: 12px;
+	text-shadow: 1px 1px 5px black;
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;	
+    width: 170px;
+}
+.comenta_entradaDestacada .comenta_mensaje{
+	color: #05b2f3;
+}
+.comenta_entrada:hover{
+	background-color: #343434;
+	text-shadow: 5px 5px 10px black;
+}
+.comenta_usuario{
+	font-weight: bold;
+}
+.comenta_mensaje{
+	margin-left: 4px;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+#comenta_formulario{
+	border-top: solid 1px #484848;
+	padding-top: 5px;
+	text-align: center;
+}
+#comenta_formulario form{
+	margin: 2px 14px auto 5px;
+	padding-bottom: 10px;
+}
+#comenta_formulario input[type='text'], #comenta_formulario input[type='email']{
+	border: 2px solid rgba(0,0,0, 0.2);
+	color: #484848;
+	font-weight: bold;
+	padding-left: 5px;
+	outline:none;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    width: 100%;
+}
+#comenta_formulario input[type='text']:focus, #comenta_formulario input[type='email']:focus{
+	border: 2px solid rgba(0, 204, 255, 0.8);
+	box-shadow: 0px 0px 5px rgb(0, 204, 255);
+    -webkit-box-shadow: 0px 0px 5px rgb(0, 204, 255); 
+    -moz-box-shadow: 0px 0px 5px rgb(0, 204, 255); 
+}
+#comenta_formulario input[type='submit']{
+	/*font-size: 16px;*/
+}

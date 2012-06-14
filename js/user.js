@@ -2,9 +2,11 @@ $(document).on("ready", function(){
 	$("#usuario").on("click", "li.entrar", function(e){
 		dialog.open("ajax/login.php");
 	});
+	/*
 	$("#usuario").on("click", "li.registrarse", function(e){
 		dialog.open("ajax/registro.php");
 	});
+	*/
 	$("#usuario").on("click", "li.logout", function(e){
 		$.get("ajax/user.php", "logout", function(res){
 			if (res != "")

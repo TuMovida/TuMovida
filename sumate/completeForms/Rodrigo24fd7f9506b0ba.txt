@@ -1,0 +1,5 @@
+Nombre: 		'Rodrigo' 
+Telefono: 		'01230123' 
+Lugar: 		'AAsd' 
+Fecha: 		'13/06/2012' 
+

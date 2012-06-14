@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^tumovida\.com\.uy$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.tumovida\.com\.uy$
+
+#RewriteRule ^/?$ "http\:\/\/tumovida\.com\.uy\/buscador_locales\.php" [R=302,L]

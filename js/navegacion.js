@@ -188,3 +188,17 @@ $.address.change(function (event){
 		nav = ir.a("foto", parse, idAlbum);
 	}
 });
+$(document).scroll(function(){
+	if($("#logoTM").is(":visible")){
+		var offset = $("#logoTM").offset();
+		var total = offset.top + $("#logoTM").height();
+		if (total < $(document).scrollTop() ){
+			if ($("#logo img").is(":hidden"))
+				$("#logo img").fadeIn();
+		}else{
+			if ($("#logo img").is(":visible"))
+				$("#logo img").fadeOut();
+		}
+
+	}
+});

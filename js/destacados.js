@@ -29,9 +29,9 @@
 
 var destacados = {
 	i: 0,
-	fxIn: 	250,
+	fxIn: 	300,
 	delay:	2500,
-	fxOut: 	250,
+	fxOut: 	300,
 	running: true,
 	init: function(i)
 	{
@@ -41,13 +41,14 @@ var destacados = {
 	},
 	doIt: function()
 	{
+		var $element = $(".destacado");
 		var self = this;
 		var element = $(".destacado_descripcion").eq(self.i);
 		if (this.running == false){
 			return false;
 		}else{
 			element.slideDown(self.fxIn).delay(self.delay).slideUp(self.fxOut, function(){
-				if (self.i>2)
+				if (self.i+1 == $(".destacado_descripcion").length)
 					self.i = 0;
 				else
 					self.i = self.i+1;

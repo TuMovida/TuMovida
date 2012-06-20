@@ -24,7 +24,23 @@ if (isset($_GET['json'])){
 			?>
 			<li>
 				<div class='promoA promoImagen'>
-					<img src='images/promos/<?=$promo['Imagen']?>' />
+					<?php
+					list($realWidth, $realHeight) = getimagesize("../images/promos/".$promo['Imagen']);
+					if($realWidth > 360){
+						$newHeight = ($realHeight * 360) / $realWidth;
+						if($newHeight < 276){
+							echo "<img src='images/thumb.php?src=http://img.tumovida.com.uy/promos/".$promo['Imagen']."&w=360&h=276px&zc=1' />";
+						}else{
+							?>
+							<img src='images/promos/<?=$promo['Imagen']?>' />
+							<?php
+						}
+					}else{
+						?>
+						<img src='images/promos/<?=$promo['Imagen']?>' />
+						<?php	
+					}
+					?>					
 					<div class='promoImagenMask'></div>
 				</div>
 				<div class='promoB'>

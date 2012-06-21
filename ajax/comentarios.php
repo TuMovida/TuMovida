@@ -47,18 +47,58 @@
 			$comentarios = new comentarios($type."_".$$page->pagina['id']);
 			if ($comentarios){
 				$res =  $comentarios->getComments($type."_".$$page->pagina['id']);
-				$comments = json_decode($res);
-				foreach ($comments as $comentario){
-					$usuario = new Usuario($comentario->id_usuario);
-					?>
-					<div class="entradaComentario">
-						<div class="usuarioComentario">
-							<img src='images/user_profiles/default.png' alt='<?=$usuario->getNombre()?>' />
-							<span><?=$usuario->getNombre()?></span>
+				$comments = json_decode($res, true);
+				$asistencias = new Asistencias;
+				$asis = $asistencias->getAsistencias($id);
+				$asisPlusComments = array_merge($comments, $asis);
+
+				function orderByDate($a, $b){
+					$aFecha = (isset($a['Fecha'])) ? $a['Fecha'] : $a['fecha'];
+					$bFecha = (isset($b['Fecha'])) ? $b['Fecha'] : $b['fecha'];
+					
+					if (strtotime($aFecha) == strtotime($bFecha)){
+						return 0;
+					}
+					if (strtotime($aFecha) > strtotime($bFecha)){
+						return -1;
+					}
+					return 1;
+				}
+				usort($asisPlusComments, "orderByDate");
+				
+				foreach($asisPlusComments as $result){
+					if(isset($result["texto"])):
+						$comentario = $result;
+						$usuario = new Usuario($comentario['id_usuario']);
+						?>
+						<div class="entradaComentario">
+							<div class="usuarioComentario">
+								<img src='images/user_profiles/default.png' alt='<?=$usuario->getNombre()?>' />
+								<span><?=$usuario->getNombre()?></span>
+							</div>
+							<span class="textoComentario">
+								<?=$comentario['texto']?>
+								<span style="display: block;text-align: right;padding: 10px;">
+									<?=$comentario['fecha']?>
+								</span>
+							</span>
 						</div>
-						<span class="textoComentario"><?=$comentario->texto?></span>
-					</div>
 					<?php
+					else:
+						$asistencia = $result;
+						$usuario = new Usuario($asistencia['idUsuario']);
+						?>
+						<div class="entradaComentario">
+							<span class="asistenciaTexto">
+								<a href='#!/usuario/<?=$usuario->getID()?>'><?=$usuario->getNombre()." ".$usuario->getApellido()?></a>
+								marcó asistencia para este evento
+								<span>
+									<?=$asistencia['Fecha']?>
+								</span>
+							</span>
+						</div>
+						<?php
+					endif;
 				}
 			}
 		}catch (Exception $e){

@@ -1,11 +1,13 @@
 <?php
+date_default_timezone_set('America/Montevideo');
+header("Content-type: text/html; charset='utf8'");
 #include '../inc/conectar.php';
 #include '../inc/usuario.class.php';
 ?>
 <!DOCTYPE html>
-<html>
+<html leng="es">
     <head>
-        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>
         </title>

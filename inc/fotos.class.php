@@ -20,28 +20,25 @@ class Fotos extends Conectar
 		$this->Conectar;
 		$this->TM();
 	}
-	public function getFotos($eventID)
+	public function getFotosEventos($eventID)
 	{
-		$q = $this->query("SELECT id, idEvento, Album, Fotos FROM eventos_fotos WHERE idEvento=".$eventID);
-		if (mysql_num_rows($q) == 0) 
-			return false;
-		return mysql_fetch_assoc($q);
+		return new FotosEventos($eventoID);
 	}
 	public function getLocalesFotos($localID)
 	{
-		return new FotosLocales();
+		return new FotosLocales($localID);
 	}
 	public function getUserFotos($userID)
 	{
-		
+		return new FotosUsuarios($userID);
 	}
 	public function getBandasFotos($bandaID)
 	{
-
+		return new FotosBandas($bandaID);
 	}
 	public function getDjFotos($djID)
 	{
-
+		return new FotosDJs($djID);
 	}
 	public function rango($tipoPagina)
 	{
@@ -54,7 +51,7 @@ class Fotos extends Conectar
 		return $tipoPagina;
 	}
 }
-class FotosEvento extends Fotos implements IFotos
+class FotosEventos extends Fotos implements IFotos
 {
 	public $id;
 	const table = "eventos_fotos";
@@ -63,12 +60,21 @@ class FotosEvento extends Fotos implements IFotos
 		$this->id = $id;
 	}
 	#TODO
-	public function getAlbum();
+	public function getAlbum()
+	{
+	
+	}
 	#TODO
-	public function getAlbumLikes();
+	public function getAlbumLikes()
+	{
+
+	}
 	#TODO
-	public function getAlbumComments();
-	public function getFotos()
+	public function getAlbumComments()
+	{
+
+	}
+	public function getFoto()
 	{
 		$q = $this->query("SELECT id, idEvento, Album, Fotos
 			FROM eventos_fotos WHERE idEvento=".$this->id);
@@ -82,32 +88,231 @@ class FotosEvento extends Fotos implements IFotos
 		#Crear nuevo objeto FotoLikes
 	}
 	#TODO
-	public function getFotoComments();
+	public function getFotoComments()
+	{
+
+	}
 }
 #TODO: Para implementar fotos a los locales en un futuro.
 class FotosLocales extends Fotos implements IFotos
 {
-	const table = "";
+	public $id;
+	const table = "eventos_fotos";
+	public function __construct($localID)
+	{
+		$this->setID($localID);
+		#Esta clase no fue implementada aún.
+		return false;
+	}
+	public function setID($id)
+	{
+		$this->id = $id;
+	}
+	#TODO
+	public function getAlbum()
+	{
+	
+	}
+	#TODO
+	public function getAlbumLikes()
+	{
+
+	}
+	#TODO
+	public function getAlbumComments()
+	{
+
+	}
+	public function getFoto()
+	{
+		$q = $this->query("SELECT id, idEvento, Album, Fotos
+			FROM ".this::table." WHERE idEvento=".$this->id);
+		if (mysql_num_rows($q) == 0) 
+			return false;
+		return mysql_fetch_assoc($q);
+	}
+	#TODO
+	public function getFotoLikes()
+	{
+		#Crear nuevo objeto FotoLikes
+	}
+	#TODO
+	public function getFotoComments()
+	{
+
+	}
 }
 #TODO: Para implementar fotos en las promociones a futuro.
 class FotosPromociones extends Fotos implements IFotos
 {
-	const table = "";
+	public $id;
+	const table = "eventos_fotos";
+	public function setID($id)
+	{
+		$this->id = $id;
+	}
+	#TODO
+	public function getAlbum()
+	{
+	
+	}
+	#TODO
+	public function getAlbumLikes()
+	{
+
+	}
+	#TODO
+	public function getAlbumComments()
+	{
+
+	}
+	public function getFoto()
+	{
+		$q = $this->query("SELECT id, idEvento, Album, Fotos
+			FROM ".this::table." WHERE idEvento=".$this->id);
+		if (mysql_num_rows($q) == 0) 
+			return false;
+		return mysql_fetch_assoc($q);
+	}
+	#TODO
+	public function getFotoLikes()
+	{
+		#Crear nuevo objeto FotoLikes
+	}
+	#TODO
+	public function getFotoComments()
+	{
+
+	}
 }
 #TODO: Para implementar fotos a los usuarios en un futuro.
 class FotosUsuarios extends Fotos implements IFotos
 {
-	const table = "";
+	public $id;
+	const table = "eventos_fotos";
+	public function setID($id)
+	{
+		$this->id = $id;
+	}
+	#TODO
+	public function getAlbum()
+	{
+	
+	}
+	#TODO
+	public function getAlbumLikes()
+	{
+
+	}
+	#TODO
+	public function getAlbumComments()
+	{
+
+	}
+	public function getFoto()
+	{
+		$q = $this->query("SELECT id, idEvento, Album, Fotos
+			FROM ".this::table." WHERE idEvento=".$this->id);
+		if (mysql_num_rows($q) == 0) 
+			return false;
+		return mysql_fetch_assoc($q);
+	}
+	#TODO
+	public function getFotoLikes()
+	{
+		#Crear nuevo objeto FotoLikes
+	}
+	#TODO
+	public function getFotoComments()
+	{
+
+	}
 }
 #TODO: Para implementar fotos a los DJ's próximamente.
 class FotosDjs extends Fotos implements IFotos
 {
-	const table = "";
+	public $id;
+	const table = "eventos_fotos";
+	public function setID($id)
+	{
+		$this->id = $id;
+	}
+	#TODO
+	public function getAlbum()
+	{
+	
+	}
+	#TODO
+	public function getAlbumLikes()
+	{
+
+	}
+	#TODO
+	public function getAlbumComments()
+	{
+
+	}
+	public function getFoto()
+	{
+		$q = $this->query("SELECT id, idEvento, Album, Fotos
+			FROM ".this::table." WHERE idEvento=".$this->id);
+		if (mysql_num_rows($q) == 0) 
+			return false;
+		return mysql_fetch_assoc($q);
+	}
+	#TODO
+	public function getFotoLikes()
+	{
+		#Crear nuevo objeto FotoLikes
+	}
+	#TODO
+	public function getFotoComments()
+	{
+
+	}
 }
 #TODO: Para implementar fotos a las Bandas próximamente.
 class FotosBandas extends Fotos implements IFotos
 {
-	const table = "";
+	public $id;
+	const table = "eventos_fotos";
+	public function setID($id)
+	{
+		$this->id = $id;
+	}
+	#TODO
+	public function getAlbum()
+	{
+	
+	}
+	#TODO
+	public function getAlbumLikes()
+	{
+
+	}
+	#TODO
+	public function getAlbumComments()
+	{
+
+	}
+	public function getFoto()
+	{
+		$q = $this->query("SELECT id, idEvento, Album, Fotos
+			FROM ".this::table." WHERE idEvento=".$this->id);
+		if (mysql_num_rows($q) == 0) 
+			return false;
+		return mysql_fetch_assoc($q);
+	}
+	#TODO
+	public function getFotoLikes()
+	{
+		#Crear nuevo objeto FotoLikes
+	}
+	#TODO
+	public function getFotoComments()
+	{
+
+	}
 }
 class FotoLike extends Fotos
 {

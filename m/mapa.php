@@ -30,14 +30,14 @@ header("Content-type: text/html; charset='utf8'");
                 </h3>
             </div>
             <div data-role="content">
-            <b><p id="descripcion">- Atención!</p></b>
-                <p id="descripcion">- Su ubicación es mostrada sin ninguna marca.</p>
+            <b><p id="descripcion">- Atenciï¿½n!</p></b>
+                <p id="descripcion">- Su ubicaciï¿½n es mostrada sin ninguna marca.</p>
                 <p id="descripcion">- El mapa se centra en el punto en donde ud. se encuentra.</p>
                 <br>
-                <p id="ubicacion">Apreta "Mostrar Ubicación" para mostrar tu ubicación:</p>
+                <p id="ubicacion">Apreta "Mostrar Ubicaciï¿½n" para mostrar tu ubicaciï¿½n:</p>
                 <br>
                 
-	<button onclick="getLocation()">Mostrar Ubicación</button>
+	<button onclick="getLocation()">Mostrar Ubicaciï¿½n</button>
                     </div>
 	<div id="mapa"></div>
 	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
@@ -65,8 +65,9 @@ function showPosition(position)
   center:latlon,zoom:14,
   mapTypeId:google.maps.MapTypeId.ROADMAP,
   mapTypeControl:false,
-  navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+  disableDefaultUI: true
   };
+  
   var map=new google.maps.Map(document.getElementById("mapa"),myOptions);
   var marker=new google.maps.Marker({position:latlon,map:map,title:"Aca estas vos!"});
   }

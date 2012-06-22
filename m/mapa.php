@@ -31,9 +31,6 @@ header("Content-type: text/html; charset='utf8'");
             </div>
             <div data-role="content">
             <b><p id="descripcion">- Atenci�n!</p></b>
-                <p id="descripcion">- Su ubicaci�n es mostrada sin ninguna marca.</p>
-                <p id="descripcion">- El mapa se centra en el punto en donde ud. se encuentra.</p>
-                <br>
                 <p id="ubicacion">Apreta "Mostrar Ubicaci�n" para mostrar tu ubicaci�n:</p>
                 <br>
                 

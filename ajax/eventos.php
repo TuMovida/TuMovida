@@ -11,12 +11,19 @@ class Eventos extends Conectar
 		$this->setDay($day);
 		echo $this->getDayTitle();
 		echo "<div class='eventos-y-locales'>";
-		echo "<div class='eventosDia' title='$day'>";
-		$this->getList();
-		echo "</div>";
-		echo "<div class='eventosDiaLocales'>";
-		$this->getLocalesList();
-		echo "</div>";
+		if($this->getList() != ""){
+			echo "<div class='eventosDia' title='$day'>";
+			$this->getList();
+			echo "</div>";
+			echo "<div class='eventosDiaLocales'>";
+			$this->getLocalesList();
+			echo "</div>";
+		}else{
+			echo "<div class='eventosDiaLocales' style='width:100%'>";
+			$this->getLocalesList();
+			echo "</div>";
+		}
+		
 		echo "</div>";
 	}
 	public function setDay($day)

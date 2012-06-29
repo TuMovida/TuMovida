@@ -56,9 +56,7 @@ class Eventos extends Conectar
 		$this->Conexion();
 		$this->TM();
 		$query = $this->query("SELECT * FROM eventos WHERE DATE_FORMAT(Fecha, '%U')=DATE_FORMAT(CURDATE(), '%U') AND DATE_FORMAT(Fecha, '%W') = '".$this->day."' ORDER BY id DESC");
-		if (!$query)
-			return false;
-		if(mysql_num_rows($query) < 1)
+		if (!$query || mysql_num_rows($query) < 1)
 			return false;
 		while ($eventoArray = mysql_fetch_assoc($query)){
 			$evento = new evento();

@@ -40,6 +40,8 @@ if (!isLogged()) die("Nececitas iniciar sesión para leer tus mensajes");
 		?>
 	</div>	
 	<?php
+	}else{
+		echo "No hiciste compras todavía";
 	}
 	?>
 </div>

@@ -50,7 +50,7 @@ if (!isLogged()) die("Nececitas iniciar sesión para leer tus mensajes");
 			<?php
 		}
 	}catch(Exception $e){
-		echo $e;
+		echo $e->getMessage();
 	}
 	?>
 </div>

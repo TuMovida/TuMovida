@@ -1,4 +1,7 @@
 <?php 
+ob_start("ob_gzhandler");
+header('Content-Encoding: gzip');
+header('Vary: Accept-Encoding');
 date_default_timezone_set('America/Montevideo');
 header("Content-type: text/html; charset='utf8'");
 @session_start();
@@ -22,19 +25,7 @@ if (isLogged()){
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>¡TuMovida!</title>
 <link rel="shortcut icon" href="favicon.ico">
-<link href="css/main.css" rel="stylesheet" type="text/css" />
-<link href="css/lqsv.css" rel="stylesheet" type="text/css" />
-<link href="css/comenta.css" rel="stylesheet" type="text/css" />
-<link href="css/promociones.css" rel="stylesheet" type="text/css" />
-<link href="css/ui.css" rel="stylesheet" type="text/css" />
-<link href="css/evento.css" rel="stylesheet" type="text/css" />
-<link href="css/eventos.css" rel="stylesheet" type="text/css" />
-<link href="css/fotos.css" rel="stylesheet" type="text/css" />
-<link href="css/local.css" rel="stylesheet" type="text/css" />
-<link href="css/promo.css" rel="stylesheet" type="text/css" />
-<link href="css/comentarios.css" rel="stylesheet" type="text/css" />
-<link href="css/editarPerfil.css" rel="stylesheet" type="text/css" />
-<link href="css/perfil.css" rel="stylesheet" type="text/css" />
+<link href="css/compile.min.css" rel="stylesheet" type="text/css"/>
 <link href="css/jquery.jscrollpane.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDcJm10cJjXQ6cZvCH4c25x5BhZCRbvY48&sensor=true"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -55,34 +46,17 @@ if (isLogged()){
 <script type="text/javascript" src="js/tips.js"></script>
 <script type="text/javascript" src="js/notificaciones.js"></script>
 <script type="text/javascript" src="js/photoDisplay.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<style>
+.slide_sumate { position:relative; height:94px; width:90px;}
+.slide_sumate img { border-radius: 10px; position:absolute; left:0; top:0; }
+</style>
 <script type="text/javascript">
-<?php //if (isLogged() && $_SESSION['idusuario'] == 1): ?>
-var time = 0;
-(function poll(){
-	setTimeout(function(){
-		$.ajax({
-			url: 'ajax/notificaciones.php',
-			type: 'POST',
-			dataType: 'JSON',
-			data: 'iniTime='+time,
-			ifModefied: true,
-			success: function(res){
-				console.log(res);
-				if (res !== "NO_RESULTS"){
-					console.log(res);
-					for (var i=0; i < res.length-1; i++)
-					{
-						createGrowl(res[i].showText, false);
-					}
-					time = res[res.length-1].ultimaFecha;
-				}
-			},
-			complete: poll
-		});
-	}, 4000);
-})();
-<?php //endif; ?>
-$(document).on("ready",function(){
+$(function(){
+	$('.slide_sumate img:gt(0)').hide();
+	setInterval(function(){$('.slide_sumate :first-child').fadeOut().next('a').fadeIn().end().appendTo('.slide_sumate');}, 3600);
+});
+$(document).on("ready",function(){	
 	//photoDisplay.open("ajax/photoWelcome.php?indexInterface");
 	$("#formulario-comentarios").submit(function(e){e.preventDefault(); $(".botonEnviarComentarios").attr("disabled", "disabled"); $.post("ajax/enviarComentarioVisitas.php",$("#formulario-comentarios").serialize(),function(res){if (res == 1){$(".botonEnviarComentarios").attr("disabled", "false");	$("#comentarios").load("index.php #comentarios");}});}); 
 	<? if(isLogged() && (!$user->getCI())): ?> dialog.show("<div class='formulario'><label>Aún no haz ingresado una CI.<br />Para realizar compras debes tener una. Puedes hacerlo ahora <a href='#!/editarPerfil'>editando tu perfil</a></label></div>");
@@ -124,7 +98,7 @@ $(document).on("ready",function(){
 	</div>
     </div>
 </div>
-<div id="destacados" class="index">
+<div id="destacados" class="index" style="display: none;">
 	<?php 
 	$destacados = new destacados();
 	$json = json_decode($destacados->getJSON(), true);
@@ -157,6 +131,13 @@ $(document).on("ready",function(){
 </div>
 <div id="container">
 	<div id="left">
+		<div class="slide_sumate">
+			<a><img src="images/sumate_slider/rrpp.jpg" /></a>
+			<a><img src="images/sumate_slider/show.jpg" /></a>
+			<a><img src="images/sumate_slider/evento.jpg" /></a>
+			<a><img src="images/sumate_slider/barra.jpg" /></a>
+		</div>
+		
 		<div id="lqsv" class="moduloLeft">
 			<h2>Lo que se viene <strong class="slash b">/</strong><strong class="slash r">/</strong><strong class="slash y">/</strong></h2>
 			<!--<div class="lqsv_entradas">
@@ -220,7 +201,6 @@ $(document).on("ready",function(){
 		</div>
 	</div>
 </div>
-
 <?php include "inc/footer.inc"; ?>
 <?php include "inc/piwik.inc"; ?>
 </body>

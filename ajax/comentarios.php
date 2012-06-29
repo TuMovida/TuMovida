@@ -50,8 +50,11 @@
 				$comments = json_decode($res, true);
 				$asistencias = new Asistencias;
 				$asis = $asistencias->getAsistencias($id);
-				$asisPlusComments = array_merge($comments, $asis);
-
+				if (is_array($asis)){
+					$asisPlusComments = array_merge($comments, $asis);	
+				}else{
+					$asisPlusComments = $comments;
+				}
 				function orderByDate($a, $b){
 					$aFecha = (isset($a['Fecha'])) ? $a['Fecha'] : $a['fecha'];
 					$bFecha = (isset($b['Fecha'])) ? $b['Fecha'] : $b['fecha'];

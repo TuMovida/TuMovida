@@ -11,19 +11,16 @@ class Eventos extends Conectar
 		$this->setDay($day);
 		echo $this->getDayTitle();
 		echo "<div class='eventos-y-locales'>";
-		if($this->getList() != ""){
-			echo "<div class='eventosDia' title='$day'>";
-			$this->getList();
-			echo "</div>";
-			echo "<div class='eventosDiaLocales'>";
+			if($this->getNumberList()){
+				echo "<div class='eventosDia' title='$day'>";
+				$this->getList();
+				echo "</div>";
+				echo "<div class='eventosDiaLocales'>";
+			}else{
+				echo "<div class='eventosDiaLocales' style='width: 100%;'>";	
+			}
 			$this->getLocalesList();
 			echo "</div>";
-		}else{
-			echo "<div class='eventosDiaLocales' style='width:100%'>";
-			$this->getLocalesList();
-			echo "</div>";
-		}
-		
 		echo "</div>";
 	}
 	public function setDay($day)
@@ -43,12 +40,25 @@ class Eventos extends Conectar
 		"</div>";
 		return $return;
 	}
+	public function getNumberList()
+	{
+		$this->Conexion();
+		$this->TM();
+		$query = $this->query("SELECT * FROM eventos WHERE DATE_FORMAT(Fecha, '%U')=DATE_FORMAT(CURDATE(), '%U') AND DATE_FORMAT(Fecha, '%W') = '".$this->day."' ORDER BY id DESC");
+		if (!$query)
+			return false;
+		if(mysql_num_rows($query) < 1)
+			return false;
+		return true;
+	}
 	public function getList()
 	{
 		$this->Conexion();
 		$this->TM();
 		$query = $this->query("SELECT * FROM eventos WHERE DATE_FORMAT(Fecha, '%U')=DATE_FORMAT(CURDATE(), '%U') AND DATE_FORMAT(Fecha, '%W') = '".$this->day."' ORDER BY id DESC");
 		if (!$query)
+			return false;
+		if(mysql_num_rows($query) < 1)
 			return false;
 		while ($eventoArray = mysql_fetch_assoc($query)){
 			$evento = new evento();

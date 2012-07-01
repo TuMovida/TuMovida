@@ -16,10 +16,11 @@ class Eventos extends Conectar
 				$this->getList();
 				echo "</div>";
 				echo "<div class='eventosDiaLocales'>";
+				$this->getLocalesList();
 			}else{
-				echo "<div class='eventosDiaLocales' style='width: 100%;'>";	
+				echo "<div class='eventosDiaLocalesBig' style='width: 100%;'>";	
+				$this->getLocalesListWithImages();
 			}
-			$this->getLocalesList();
 			echo "</div>";
 		echo "</div>";
 	}
@@ -56,7 +57,9 @@ class Eventos extends Conectar
 		$this->Conexion();
 		$this->TM();
 		$query = $this->query("SELECT * FROM eventos WHERE DATE_FORMAT(Fecha, '%U')=DATE_FORMAT(CURDATE(), '%U') AND DATE_FORMAT(Fecha, '%W') = '".$this->day."' ORDER BY id DESC");
-		if (!$query || mysql_num_rows($query) < 1)
+		if (!$query)
+			return false;
+		if(mysql_num_rows($query) < 1)
 			return false;
 		while ($eventoArray = mysql_fetch_assoc($query)){
 			$evento = new evento();
@@ -94,6 +97,29 @@ class Eventos extends Conectar
 				//Locales:
 				echo "<li>";
 				echo "<a href='#!/local/".$rowEmp['id']."'><img src='images/icons/drink_empty.png' />".$rowEmp['Nombre']."</a>";
+				echo "</li>";
+			}
+			echo "</ul>";
+			echo "<a href='#!/eventos/' class='ver-mas' rel='".$dia."'>Ver más</a>";
+		}
+	}
+	public function getLocalesListWithImages()
+	{
+		$dia= $this->dia;
+		if ($dia == "Miércoles") $dia = "Miercoles";
+		if ($dia == "Sábado") $dia = "Sabado";
+		$this->Conexion();
+		$this->TM();
+		$resEmp = $this->query("SELECT * FROM locales WHERE ".$dia."=1 AND Listado=1 ORDER BY Nombre ASC");
+		$totEmp = mysql_num_rows($resEmp);
+		if ($totEmp> 0) {
+			echo "<h4>Locales abiertos</h4><ul>";
+			while ( $rowEmp = mysql_fetch_assoc($resEmp) ) {
+				//Locales:
+				echo "<li>";
+				echo "<a href='#!/local/".$rowEmp['id']."'>
+					<img src='images/thumb.php?src=http://img.tumovida.com.uy/locales/".$rowEmp['Imagen']."&w=40&h=40' />
+					<span>".$rowEmp['Nombre']."</span></a>";
 				echo "</li>";
 			}
 			echo "</ul>";

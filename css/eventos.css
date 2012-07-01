@@ -130,6 +130,68 @@
 #eventos .eventosDiaLocales a.ver-mas:hover{
 	border-bottom: 1px solid #999999;
 }
+#eventos .eventosDiaLocalesBig{
+	/*border: 1px solid #DCDCDC;*/
+	border-radius: 4px;
+	margin: 4px 0px 4px 4px;
+	padding-bottom: 18px;
+	position: relative;
+}
+#eventos .eventosDiaLocalesBig h4{
+	color: #424242;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 8px 4px;
+	text-align: left;
+}
+#eventos .eventosDiaLocalesBig ul li{
+	display: inline-block;
+	padding: 4px;
+}
+#eventos .eventosDiaLocalesBig ul a{
+	background: #DCDCDC;
+	border: 1px solid #CFCECE;
+	border-radius: 4px;
+	display: block;
+	color: rgb(87, 87, 87);
+	font-size: 16px;
+	padding: 4px;
+	text-decoration: none;
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    width: 140px;
+}
+#eventos .eventosDiaLocalesBig ul a:hover{
+	background: rgb(195, 195, 195);
+	border: 1px solid rgb(153, 153, 153);
+	color: rgb(105, 105, 105);
+}
+#eventos .eventosDiaLocalesBig ul a img{
+	border-radius: 4px;
+	display: inline-block;
+	margin: 0 4px 0 0;
+	height: 40px;
+	width: 40px;
+	vertical-align: top;
+}
+#eventos .eventosDiaLocalesBig ul a span{
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	width: 80px;
+}
+#eventos .eventosDiaLocalesBig a.ver-mas{
+	color: #424242;
+	font-size: 12px;
+	text-align: right;
+	position: absolute;
+	right: 2px;
+	text-decoration: none;
+}
+#eventos .eventosDiaLocalesBig a.ver-mas:hover{
+	border-bottom: 1px solid #999999;
+}
 .local-verMas{
 	border: 1px solid whiteSmoke;
 	display: inline-block;

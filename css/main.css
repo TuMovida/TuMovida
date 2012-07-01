@@ -76,6 +76,51 @@ body{
 	color: white;
 	cursor: pointer;*/
 }
+#hMenu #navegacion a.navBtn{
+	display: block;
+	height: 37px;
+	width: 41px;
+}
+#hMenu #navegacion a.navBtnInicio{
+	background: url("../images/bt1.png");
+}
+#hMenu #navegacion a.navBtnInicio:hover{
+	background: url("../images/bt1h.png");
+}
+#hMenu #navegacion a.navBtnInicioActive,
+#hMenu #navegacion a.navBtnInicioActive:hover{
+	background: url("../images/bt1a.png");	
+}
+#hMenu #navegacion a.navBtnEventos{
+	background: url("../images/bt2.png");
+}
+#hMenu #navegacion a.navBtnEventos:hover{
+	background: url("../images/bt2h.png");
+}
+#hMenu #navegacion a.navBtnEventosActive,
+#hMenu #navegacion a.navBtnEventosActive:hover{
+	background: url("../images/bt2a.png");
+}
+#hMenu #navegacion a.navBtnPromos{
+	background: url("../images/bt3.png");
+}
+#hMenu #navegacion a.navBtnPromos:hover{
+	background: url("../images/bt3h.png");
+}
+#hMenu #navegacion a.navBtnPromosActive,
+#hMenu #navegacion a.navBtnPromosActive:hover{
+	background: url("../images/bt3a.png");
+}
+#hMenu #navegacion a.navBtnFotos{
+	background: url("../images/bt4.png");
+}
+#hMenu #navegacion a.navBtnFotos:hover{
+	background: url("../images/bt4h.png");
+}
+#hMenu #navegacion a.navBtnFotosActive,
+#hMenu #navegacion a.navBtnFotosActive:hover{
+	background: url("../images/bt4a.png");	
+}
 #hMenu #usuario{
 	text-align:right;
 	display: inline-block;
@@ -217,6 +262,10 @@ strong.y{
 	padding: 0px;
 	width: 80%;
 }
+
+.slide_sumate { position:relative; height:200px; width:90px; overflow: hidden;}
+.slide_sumate img { position:absolute; left:0; top:0; }
+
 .moduloRight h2{
 	background: #282828 url("../images/hbg.png") repeat-x;
 	border-radius: 10px 10px 0px 0px;

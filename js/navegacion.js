@@ -1,11 +1,12 @@
 var ir = {
+	ubicacion: "index",
 	a: function(){
 		var localizacion = arguments[0];
 		if (arguments[1] !== undefined)
 			var id = arguments[1];
 		else
 			var id = undefined;
-		
+		ir.ubicacion = localizacion;
 		if(localizacion === "index"){
 			$.address.title("¡TuMovida!");
 			this.cargar("promociones");
@@ -62,8 +63,9 @@ var ir = {
 			}else{
 				photoDisplay.open("ajax/photoDisplay.php?id="+id);
 			}
+		}else{
+			$(window).scrollTop(0);
 		}
-		$(window).scrollTop(0);
 	},
 	cargar: function(objeto){
 		ir.cargando();
@@ -88,10 +90,9 @@ var ir = {
 		}else{
 			$("#main").load("ajax/" + objeto + ".php", piwikTrackAJAXresponse);
 		}
+		// ir.icono();
 	},
 	mostrar: function(objeto){
-		if ($("#logo img").is(":visible"))
-			$("#logo img").fadeOut();
 		if ($("#"+objeto).is(":hidden")){
 			$("#"+objeto).slideDown(300);
 			if (objeto == "destacados")
@@ -99,8 +100,6 @@ var ir = {
 		}
 	},
 	ocultar: function(objeto){
-		if ($("#logo img").is(":hidden"))
-			$("#logo img").fadeIn();
 		if ($("#"+objeto).is(":visible")){
 			$("#"+objeto).slideUp(300);
 			if (objeto == "destacados")
@@ -111,12 +110,6 @@ var ir = {
 		var mainWidth = $("#main").width();
 		var mainHeight = $("#main").height();
 		var mainPos = $("#main").position();
-		/*$("body").append("<div id='main-overlayer'></div>");
-		$("#main-overlayer").css("top", mainPos.top)
-			.css("left", mainPos.left)
-			.width(mainWidth)
-			.height(mainHeight)
-			.fadeIn(1500);*/
 		$("#main").animate({
 			opacity: 0.4
 		}, 100);
@@ -125,9 +118,36 @@ var ir = {
 		$("#main").animate({
 			opacity: 1
 		}, 500);
-		/*$("#main-overlayer").fadeOut(500, function(){
-			$(this).remove();
-		});*/
+	},
+	icono: function(){
+		console.log(ir.ubicacion);
+		function setActive(name){
+			$("#navegacion li a.navBtn").each(function(index){
+				var classes = $(this).attr("class");
+				classes = classes.split(" ");
+				for (var i = 0; i<classes.length; i++){
+					var isActive = classes[i].substr(classes[i].length-6);
+					if(isActive === "Active"){
+						$(this).removeClass(classes[i]);
+					}
+				}
+			});
+			var $icon = $("#navegacion li a.navBtn"+name);
+			if(!$icon.hasClass("navBtn"+name+"Active"))
+				$icon.addClass("navBtn"+name+"Active");
+		}
+		
+		if(ir.ubicacion == "index"){
+			setActive("Inicio");
+		}else if(ir.ubicacion == "eventos"){
+			setActive("Eventos");
+		}
+		if(ir.ubicacion == "promociones"){
+			setActive("Promos");
+		}
+		if(ir.ubicacion == "fotos"){
+			setActive("Fotos");
+		}
 	}
 };
 $.address.crawlable(true);
@@ -188,10 +208,10 @@ $.address.change(function (event){
 		nav = ir.a("foto", parse, idAlbum);
 	}
 });
-$(document).scroll(function(){
-	if($("#logoTM").is(":visible")){
-		var offset = $("#logoTM").offset();
-		var total = offset.top + $("#logoTM").height();
+var logoCheck = function(){
+	if($("#logoTM img").is(":visible")){
+		var offset = $("#logoTM img").offset();
+		var total = (offset.top - 40) + $("#logoTM img").height();
 		if (total < $(document).scrollTop() ){
 			if ($("#logo img").is(":hidden"))
 				$("#logo img").fadeIn();
@@ -199,6 +219,13 @@ $(document).scroll(function(){
 			if ($("#logo img").is(":visible"))
 				$("#logo img").fadeOut();
 		}
-
+	}else{
+		if ($("#logo img").is(":hidden"))
+				$("#logo img").fadeIn();
 	}
+};
+$(document).scroll(logoCheck);
+$(document).ajaxSuccess(function(){
+	logoCheck();
+	ir.icono();
 });

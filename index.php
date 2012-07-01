@@ -49,11 +49,12 @@ if (isLogged()){
 <script type="text/javascript" src="js/slider.js"></script>
 <style>
 .slide_sumate { position:relative; height:94px; width:90px;}
-.slide_sumate img { border-radius: 10px; position:absolute; left:0; top:0; }
+.slide_sumate a{display: block; position:absolute; left:0; top:0;}
+.slide_sumate img { border-radius: 10px; }
 </style>
 <script type="text/javascript">
 $(function(){
-	$('.slide_sumate img:gt(0)').hide();
+	$('.slide_sumate a:gt(0)').hide();
 	setInterval(function(){$('.slide_sumate :first-child').fadeOut().next('a').fadeIn().end().appendTo('.slide_sumate');}, 3600);
 });
 $(document).on("ready",function(){	
@@ -72,10 +73,10 @@ $(document).on("ready",function(){
 	</div>
 	<div id="navegacion">
 		<ul>
-			<li><a href="#" title="Inicio"><img src="images/bt1.png" alt="Inicio" name="Image1" width="41" height="37" border="0"></a></li>
-			<li><a href="#!/eventos" title="Eventos"><img src="images/bt2.png" alt="Eventos" name="Image2" width="41" height="37" border="0"></a></li>
-			<li><a href="#!/promos" title="Promociones"><img src="images/bt3.png" alt="Promociones" name="Image3" width="41" height="37" border="0"></a></li>
-			<li title="Nueva sección de fotos"><a href="#!/fotos" title="Fotos"><img src="images/bt4.png" alt="Fotos" name="Image4" width="41" height="37" border="0"></a></li>
+			<li><a class="navBtn navBtnInicio" href="#" title="Inicio"><!-- <img src="images/bt1.png" alt="Inicio" name="Image1" width="41" height="37" border="0"> --></a></li>
+			<li><a class="navBtn navBtnEventos" href="#!/eventos" title="Eventos"><!-- <img src="images/bt2.png" alt="Eventos" name="Image2" width="41" height="37" border="0"> --></a></li>
+			<li><a class="navBtn navBtnPromos" href="#!/promos" title="Promociones"><!-- <img src="images/bt3.png" alt="Promociones" name="Image3" width="41" height="37" border="0"> --></a></li>
+			<li><a class="navBtn navBtnFotos" href="#!/fotos" title="Fotos"><!-- <img src="images/bt4.png" alt="Fotos" name="Image4" width="41" height="37" border="0"> --></a></li>
 		</ul>
 	</div>
 	<div id="usuario">
@@ -131,12 +132,12 @@ $(document).on("ready",function(){
 </div>
 <div id="container">
 	<div id="left">
-		<div class="slide_sumate">
+		<!-- <div class="slide_sumate">
 			<a><img src="images/sumate_slider/rrpp.jpg" /></a>
 			<a><img src="images/sumate_slider/show.jpg" /></a>
 			<a><img src="images/sumate_slider/evento.jpg" /></a>
 			<a><img src="images/sumate_slider/barra.jpg" /></a>
-		</div>
+		</div> -->
 		
 		<div id="lqsv" class="moduloLeft">
 			<h2>Lo que se viene <strong class="slash b">/</strong><strong class="slash r">/</strong><strong class="slash y">/</strong></h2>

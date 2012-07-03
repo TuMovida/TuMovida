@@ -29,7 +29,7 @@ if (isset($_GET['json'])){
 					if($realWidth > 360){
 						$newHeight = ($realHeight * 360) / $realWidth;
 						if($newHeight < 276){
-							echo "<img src='images/thumb.php?src=http://img.tumovida.com.uy/promos/".$promo['Imagen']."&w=360&h=276px&zc=1' />";
+							echo "<img src='images/thumb.php?src=promos/".$promo['Imagen']."&w=360&h=276px&zc=1' />";
 						}else{
 							?>
 							<img src='images/promos/<?=$promo['Imagen']?>' />

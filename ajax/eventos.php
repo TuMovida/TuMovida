@@ -117,9 +117,15 @@ class Eventos extends Conectar
 			while ( $rowEmp = mysql_fetch_assoc($resEmp) ) {
 				//Locales:
 				echo "<li>";
-				echo "<a href='#!/local/".$rowEmp['id']."'>
-					<img src='images/thumb.php?src=http://img.tumovida.com.uy/locales/".$rowEmp['Imagen']."&w=40&h=40' />
-					<span>".$rowEmp['Nombre']."</span></a>";
+				if (file_exists("../images/locales/".$rowEmp['Imagen'])){
+					echo "<a href='#!/local/".$rowEmp['id']."'>
+						<img src='images/thumb.php?src=locales/".$rowEmp['Imagen']."&w=40&h=40' />
+						<span>".$rowEmp['Nombre']."</span></a>";
+				}else{
+					echo "<a href='#!/local/".$rowEmp['id']."'>
+						<img alt='".$rowEmp['Nombre']."' />
+						<span>".$rowEmp['Nombre']."</span></a>";
+				}
 				echo "</li>";
 			}
 			echo "</ul>";

@@ -82,7 +82,7 @@
            <a href="eventos.php"><img src="img/nav/gal.png" alt="" /><p>Eventos</p></a>
          </li>
          <li class="nav-item">
-           <a href="#"><img src="img/nav/gal.png" alt="" /><p>Promos</p></a>
+           <a href="promo.php"><img src="img/nav/gal.png" alt="" /><p>Promos</p></a>
          </li>
          <li class="nav-item">
            <a href="#"><img src="img/nav/gal.png" alt="" /><p>Locales</p></a>

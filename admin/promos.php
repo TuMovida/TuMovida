@@ -38,9 +38,10 @@ include "inc/header.php";
 ?>
 <style>
 #add_condicion{
+    color: #086CFF;;
     display: block;
     font-size: 12px;
-    padding: 2px;
+    margin-top: 4px;
     text-align: right;
     width: 100%;
 }

@@ -31,31 +31,30 @@
   <![endif]-->
   <script type="text/javascript">
   $(document).on("ready", function(){
-    var latlng = new google.maps.LatLng(1,1);
+    var latlng = new google.maps.LatLng(-34.89723487344326, -56.162723541259766);
     var opciones = {
-      zoom: 8,
+      zoom: 10,
       center: latlng,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
+      disableDoubleClickZoom: true,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      streetViewControl: false
     };
     var map = new google.maps.Map(document.getElementById("mapCanvas"), opciones);
+    google.maps.event.addListener(map, "dblclick", function(e){
+      if ($("input[name='Nombre']").val() != ""){
+        var title = $("input[name='Nombre']").val();
+      }else{
+        var title = prompt("Titulo para el marcador?");  
+      }
+      $("#evento_mapa").val(e.latLng.lat()+", "+e.latLng.lng()+", "+map.getZoom()+", "+title);
+      var marker = new google.maps.Marker({
+        position: e.latLng,
+        map: map,
+        title: title
+      });
+    });
   });
   </script>
-  <!--<script type="text/javascript" src="tinymce/jscripts/tiny_mce/tiny_mce.js"></script>  -
-  <script type="text/javascript">
-    tinyMCE.init({
-      mode : "textareas",
-      width: "100%",
-      theme : "advanced",
-      skin : "o2k7",
-      skin_variant : "silver",
-      entity_encoding : "raw",
-      theme_advanced_toolbar_location : "top",
-      theme_advanced_resizing : true,
-          theme_advanced_buttons1 : "bold,italic,underline, bullist,numlist,separator,outdent, indent,separator,undo,redo,separator, hr,removeformat,visualaid,separator,sub,sup,separator,charmap",
-          theme_advanced_buttons2 : "",
-          theme_advanced_buttons3 : ""
-    });
-  </script>-->
 </head>
 <body>
 
@@ -80,7 +79,25 @@
         <li>
         <ul id="top-nav">
          <li class="nav-item">
+           <a href="eventos.php"><img src="img/nav/gal.png" alt="" /><p>Eventos</p></a>
+         </li>
+         <li class="nav-item">
+           <a href="#"><img src="img/nav/gal.png" alt="" /><p>Promos</p></a>
+         </li>
+         <li class="nav-item">
+           <a href="#"><img src="img/nav/gal.png" alt="" /><p>Locales</p></a>
+         </li>
+         <li class="nav-item">
            <a href="fotos.php"><img src="img/nav/gal.png" alt="" /><p>Fotos</p></a>
+         </li>
+         <li class="nav-item">  
+           <a href="#"><img src="img/nav/gal.png" alt="" /><p>Comentarios</p></a>
+           <ul class="sub-nav">
+            <li><a href="librodevisitas.php">Libro de visitas</a></li>
+          </ul>
+         </li>
+         <li class="nav-item">
+           <a href="usuarios.php"><img src="img/nav/gal.png" alt="" /><p>Usuarios</p></a>
          </li>
        </ul>
       </li>

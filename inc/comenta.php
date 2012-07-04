@@ -4,7 +4,7 @@ class comenta extends Conectar
 {
 	private $coments;
 	function __construct(){
-		$this->coments = $this->query("SELECT * FROM librodevisitas ORDER BY id DESC LIMIT 0, 40");
+		$this->coments = $this->query("SELECT * FROM librodevisitas WHERE block=0 ORDER BY id DESC LIMIT 0, 40");
 	}
 	public function getJSON(){
 		if (!$this->coments){

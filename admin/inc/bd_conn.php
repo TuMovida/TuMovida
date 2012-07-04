@@ -62,8 +62,20 @@ class Conectar{
 		else
 			return array("state" => $query, "id" => mysql_insert_id());
 	}
-	public function update(){
-
+	public function update($into, $dataArray, $where){
+		foreach($dataArray as $name=>$val){
+			$val = str_replace("\"", "\\\"", $val);
+			if(!isset($set)){
+				$set = $name."=".mysql_real_escape_string($val);
+			}else{
+				$set = ", ".$name."=".mysql_real_escape_string($val);
+			}
+		}
+		$query = $this->query("UPDATE ".$into." SET (".$set.") WHERE ".$where);
+		if (!$query)
+			return false;
+		else
+			return array("state" => $query, "id" => mysql_insert_id());
 	}
 	public function clearFields($dataArray)
 	{

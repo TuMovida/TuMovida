@@ -79,25 +79,28 @@
         <li>
         <ul id="top-nav">
          <li class="nav-item">
-           <a href="eventos.php"><img src="img/nav/gal.png" alt="" /><p>Eventos</p></a>
+           <a href="eventos.php"><img src="img/nav/cal.png" alt="" /><p>Eventos</p></a>
          </li>
          <li class="nav-item">
-           <a href="promo.php"><img src="img/nav/gal.png" alt="" /><p>Promos</p></a>
+           <a href="promos.php"><img src="img/nav/tb.png" alt="" /><p>Promos</p></a>
          </li>
          <li class="nav-item">
-           <a href="#"><img src="img/nav/gal.png" alt="" /><p>Locales</p></a>
+           <a href="#"><img src="img/nav/tb.png" alt="" /><p>Locales</p></a>
          </li>
          <li class="nav-item">
            <a href="fotos.php"><img src="img/nav/gal.png" alt="" /><p>Fotos</p></a>
          </li>
          <li class="nav-item">  
-           <a href="#"><img src="img/nav/gal.png" alt="" /><p>Comentarios</p></a>
+           <a href="#"><img src="img/nav/typ.png" alt="" /><p>Comentarios</p></a>
            <ul class="sub-nav">
             <li><a href="librodevisitas.php">Libro de visitas</a></li>
           </ul>
          </li>
          <li class="nav-item">
-           <a href="usuarios.php"><img src="img/nav/gal.png" alt="" /><p>Usuarios</p></a>
+           <a href="usuarios.php"><img src="img/nav/flm.png" alt="" /><p>Usuarios</p></a>
+         </li>
+         <li class="nav-item">
+           <a href="compras.php"><img src="img/nav/anlt.png" alt="" /><p>Compras</p></a>
          </li>
        </ul>
       </li>

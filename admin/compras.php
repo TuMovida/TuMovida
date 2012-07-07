@@ -11,14 +11,14 @@ while ($res = mysql_fetch_assoc($query))
     <?php if (isset($_GET['success'])): ?>
   <div class="ad-notif-info grid_12"><p>Album cargado con exito</p></div>
     <?php endif; ?>
-    <?php if (!isset($_GET['id'])): 
+    <?php if (!isset($_GET['id'])):
     $conn->TM();
     $q = $conn->query("SELECT * FROM promociones ORDER BY id DESC");
     while ($r = mysql_fetch_assoc($q))
         $b[] = $r;
     ?>
     <div class="box grid_12">
-        <div class="box-head"><h2>Lista de compras</h2></div>
+        <div class="box-head"><h2>Lista de promociones</h2></div>
         <div class="box-content no-pad">
             <table class="display" id="dt3">
                 <thead>
@@ -42,7 +42,7 @@ while ($res = mysql_fetch_assoc($query))
     <div class="box grid_12">
         <div class="box-head"><h2>Lista de compras</h2></div>
         <div class="box-content no-pad">
-            <table class="display" id="dt3">
+            <table class="display" id="dt4">
                 <thead>
                     <tr>
                         <th>id</th>
@@ -82,7 +82,7 @@ while ($res = mysql_fetch_assoc($query))
     </div>
 </div>
 <script type="text/javascript">
-$('#dt3').dataTable( {
+$('#dt3, #dt4').dataTable( {
         "bJQueryUI": true,
         "sPaginationType": "full_numbers"   
     });

@@ -1,8 +1,6 @@
 <?php
 include "inc/bd_conn.php";
-
 $title = "Promociones";
-
 $conn = new Conectar();
 $conn->TM();
 if (isset($_POST["Nombre"]))
@@ -36,6 +34,8 @@ if ($lista){
 }
 include "inc/header.php"; 
 ?>
+<link href="css/redactor.css" rel="stylesheet" type="text/css" />
+<script src="js/redactor.min.js" type="text/javascript"></script>
 <style>
 #add_condicion{
     color: #086CFF;;
@@ -53,6 +53,12 @@ $(document).ready(function(){
     $('#add_condicion').click(function(e){
         e.preventDefault();
         $('.condiciones').append("<input type='text' name='Condicion[]' style='margin-top: 2px;' placeholder='Otra condición'/>");
+    });
+    $("textarea").redactor({
+        lang: 'es',
+        buttons: ['html', '|', 'bold', 'italic', 'deleted', '|', 'alignleft', 'aligncenter', 'alignright', 
+        '|', 'unorderedlist', 'orderedlist', 'outdent', 'indent', '|',
+        'justify', '|', 'horizontalrule', 'fullscreen']
     });
 });
 </script>

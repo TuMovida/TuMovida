@@ -66,6 +66,10 @@ if (isset($_POST["Nombre"]))
 }
 ?>
 <?php include "inc/header.php"; ?>
+
+<link href="css/redactor.css" rel="stylesheet" type="text/css" />
+<script src="js/redactor.min.js" type="text/javascript"></script>
+
 <script type="text/javascript">
 $(document).on("ready", function(){
     $.ajax({
@@ -100,6 +104,12 @@ $(document).on("ready", function(){
                     $("#evento_mapa").val(datos.Mapa);
             }
         });
+    });
+    $("textarea").redactor({
+        lang: 'es',
+        buttons: ['html', '|', 'bold', 'italic', 'deleted', '|', 'alignleft', 'aligncenter', 'alignright', 
+        '|', 'unorderedlist', 'orderedlist', 'outdent', 'indent', '|',
+        'justify', '|', 'horizontalrule', 'fullscreen']
     });
 });
 </script>
@@ -207,7 +217,7 @@ $(document).on("ready", function(){
                   <p class="form-label">Mapa</p>
                   <div class="form-item">
                     <input name="Mapa" type="text" id="evento_mapa" placeholder="{}" />
-                    <div id="mapCanvas" style="width: 100%; height: 150px;"></div>
+                    <div id="mapCanvas" style="width: 100%; height: 250px;"></div>
                   </div>
                 </div>
 

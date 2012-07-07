@@ -2,18 +2,23 @@
 include "inc/bd_conn.php";
 $conn = new Conectar();
 $conn->Usuarios();
-$query = $conn->query("SELECT * FROM compras ORDER BY id DESC");
+if(isset($_GET['id']) && is_numeric($_GET['id'])){
+    $query = $conn->query("SELECT * FROM compras WHERE idArticulo=".$_GET['id']);
+}else{
+    $query = $conn->query("SELECT * FROM compras ORDER BY id DESC");
+}
 while ($res = mysql_fetch_assoc($query))
     $buff[] = $res;
 ?>
 <?php include "inc/header.php"; ?>
 <div class="content container_12">
-    <?php if (isset($_GET['success'])): ?>
-  <div class="ad-notif-info grid_12"><p>Album cargado con exito</p></div>
-    <?php endif; ?>
     <?php if (!isset($_GET['id'])):
     $conn->TM();
-    $q = $conn->query("SELECT * FROM promociones ORDER BY id DESC");
+    if(isset($_GET['id']) && is_numeric($_GET['id'])){
+        $q = $conn->query("SELECT * FROM promociones WHERE id=".$_GET['id']);
+    }else{
+        $q = $conn->query("SELECT * FROM promociones ORDER BY id DESC");    
+    }
     while ($r = mysql_fetch_assoc($q))
         $b[] = $r;
     ?>
@@ -38,10 +43,14 @@ while ($res = mysql_fetch_assoc($query))
           </table>
         </div>
     </div>
-    <?php endif; ?>
+    <?php else: ?>
     <div class="box grid_12">
         <div class="box-head"><h2>Lista de compras</h2></div>
         <div class="box-content no-pad">
+            <?php if(!isset($buff)):
+                echo "<span style='display: block; text-align: center; padding: 10px;'>No hay compras</span>";
+            else:
+            ?> 
             <table class="display" id="dt4">
                 <thead>
                     <tr>
@@ -78,8 +87,10 @@ while ($res = mysql_fetch_assoc($query))
                  <?php endforeach; ?>
                 </tbody>
           </table>
+          <?php endif;?>
         </div>
     </div>
+    <?php endif; ?>
 </div>
 <script type="text/javascript">
 $('#dt3, #dt4').dataTable( {

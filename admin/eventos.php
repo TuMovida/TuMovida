@@ -7,7 +7,7 @@ if (isset($_POST["Nombre"]))
 {
     $go = $_POST;
     if (isset($_FILES["Imagen"])){
-        $img = new imageUpload($_FILES["Imagen"]);
+        $img = new imageUpload($_FILES["Imagen"], "eventos");
         $go["Imagen"] = $img->getFile();
     }
     $conn->insert("eventos", $go);

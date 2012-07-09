@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-<link rel="stylesheet" href="css/master.css">
+  <title><?php (isset($title)) ? $title : "¡TuMovida! - Administración" ?></title>
+  <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="css/tables.css">
   <link rel="stylesheet" href="css/iphone-check.css">
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDcJm10cJjXQ6cZvCH4c25x5BhZCRbvY48&sensor=true"></script>
@@ -83,6 +84,11 @@
          </li>
          <li class="nav-item">
            <a href="promos.php"><img src="img/nav/tb.png" alt="" /><p>Promos</p></a>
+           <ul class="sub-nav">
+            <li><a href="promos.php?listado=activas">Activas</a></li>
+            <li><a href="promos.php">Nueva</a></li>
+            <li><a href="promos.php?listado">Todas</a></li>
+           </ul>
          </li>
          <li class="nav-item">
            <a href="#"><img src="img/nav/tb.png" alt="" /><p>Locales</p></a>
@@ -94,7 +100,7 @@
            <a href="#"><img src="img/nav/typ.png" alt="" /><p>Comentarios</p></a>
            <ul class="sub-nav">
             <li><a href="librodevisitas.php">Libro de visitas</a></li>
-          </ul>
+           </ul>
          </li>
          <li class="nav-item">
            <a href="usuarios.php"><img src="img/nav/flm.png" alt="" /><p>Usuarios</p></a>

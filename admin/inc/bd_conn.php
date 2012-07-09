@@ -65,13 +65,15 @@ class Conectar{
 	public function update($into, $dataArray, $where){
 		foreach($dataArray as $name=>$val){
 			$val = str_replace("\"", "\\\"", $val);
+			$val = str_replace("'", "\'", $val);
+			unset($dataArray['id']);
 			if(!isset($set)){
-				$set = $name."=".mysql_real_escape_string($val);
+				$set = $name."=\"".mysql_real_escape_string($val)."\"";
 			}else{
-				$set = ", ".$name."=".mysql_real_escape_string($val);
+				$set.= ", ".$name."=\"".mysql_real_escape_string($val)."\"";
 			}
 		}
-		$query = $this->query("UPDATE ".$into." SET (".$set.") WHERE ".$where);
+		$query = $this->query("UPDATE ".$into." SET ".$set." WHERE ".$where);
 		if (!$query)
 			return false;
 		else
@@ -95,12 +97,13 @@ class Conectar{
 class imageUpload
 {
 	const ROOT = "../";
-	public $filename, $src, $obj;
+	public $filename, $src, $obj, $ubicacion;
 
-	public function __construct($file)
+	public function __construct($file, $tipo)
 	{
-		$this->src = $file;
-		$this->obj = $this->upload($this->src);
+		$this->src 		= $file;
+		$this->obj 		= $this->upload($this->src);
+		$this->ubicacion= $tipo;
 		return $this->obj;
 	}
 	public function __tostring()
@@ -122,8 +125,8 @@ class imageUpload
 		$imagen = $file['name'];
 		$imagen1 = explode(".",$imagen);
 		$imagen2 = rand(0,9).rand(100,9999).rand(100,9999).".".$imagen1[1];
-		move_uploaded_file($file['tmp_name'], imageUpload::ROOT."images/eventos/".$imagen2);
-		$ruta = imageUpload::ROOT."images/eventos/".$imagen2;
+		move_uploaded_file($file['tmp_name'], imageUpload::ROOT."images/".$this->ubicacion."/".$imagen2);
+		$ruta = imageUpload::ROOT."images/".$this->ubicacion."/".$imagen2;
 		chmod($ruta,0777);
 		list ($width, $height) = getimagesize($ruta);
 		return $imagen2;

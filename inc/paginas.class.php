@@ -166,6 +166,18 @@ class evento extends pagina{
 			return $this->pagina['id_promo'];
 		else return false;
 	}
+	public function getVisitas()
+	{
+		if(!isset($this->pagina['Visitas']))
+			return false;
+		return $this->pagina['Visitas'];
+	}
+	public function setVisita()
+	{
+		$visitas = $this->getVisitas();
+		$visitas++;
+		mysql_query("UPDATE eventos SET Visitas=".$visitas." WHERE id=".$this->pagina['id']);
+	}
 }
 /*
  * Local
@@ -252,9 +264,23 @@ class promocion extends pagina{
 		return $this->pagina['Valor'];
 	}
 }
-/*****************************/
-/** VERSION: 24 / 05 / 2012 **/
-/*****************************/
+#################################
+### VERSION: 24 / 05 / 2012  ####
+#################################
+###					         ###
+###					      ###
+###				       ###						
+###					###
+###				###
+###          ###
+###      ### ###							   #############
+###   ###       ###							###				###
+######             ###						###             ###
+###                   ###					###				###
+###                    ###					###				###
+###                     ###					###				###
+###                      ###  				###				###
+###                       ###                  #############
 class iPag extends Conectar
 {
 	public $id, $pagArray;
@@ -387,6 +413,40 @@ class iPromo extends iPag
 	public function getActivo()
 	{
 
+	}
+}
+class Asistencias extends Conectar
+{
+	public $dataArray;
+	public function __construct()
+	{
+		$this->Conexion();
+		$this->TM();
+	}
+	public function getAsistencias($idEvento)
+	{
+		$query = $this->query("SELECT id, idUsuario, Fecha FROM asistencias WHERE idEvento=".$idEvento. " AND block=0");	
+		if (mysql_affected_rows() == 0)
+			return false;
+		while($res = mysql_fetch_assoc($query)){
+			$buff[] = $res;
+		}
+		$this->dataArray = $buff;
+		return $buff;
+	}
+	public function getUsuario()
+	{
+		if (isset($this->dataArray) && $this->dataArray != ""){
+			return $this->dataArray['idUsuario'];	
+		}
+		return false;
+	}
+	public function getFecha()
+	{
+		if (isset($this->dataArray) && $this->dataArray != ""){
+			return $this->dataArray['Fecha'];	
+		}
+		return false;
 	}
 }
 ?>

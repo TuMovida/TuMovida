@@ -1,4 +1,5 @@
 <?php
+ob_start("ob_gzhandler");
 session_start();
 require_once '../inc/conectar.php';
 require_once '../inc/paginas.class.php';
@@ -9,7 +10,7 @@ $id = $_GET['id'];
 
 if(!is_numeric($id))
 {
-	exit("URL INVALIDA: VERIFIQUE URL");
+	exit("URL INVALIDA");
 }
 
 $c = new Conectar();
@@ -61,6 +62,7 @@ if ($eventoArray)
 		echo json_encode($eventoArray);
 		exit;
 	}
+	$evento->setVisita();
 ?>
 <h2><img src="images/ico_eventos.png"/><?=$evento->nombre();?> <strong class="slash b">/</strong><strong class="slash r">/</strong><strong class="slash y">/</strong></h2>
 <div id="evento">

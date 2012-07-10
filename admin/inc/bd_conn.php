@@ -1,6 +1,6 @@
 <?php
 class Conectar{
-	protected $dbhost 		= 'mysql.tumovida.com.uy';
+	protected $dbhost 		= 'localhost';
 	protected $dbusuario 	= 'tumovida_bd';
 	protected $dbpass 		= '1123581321';
 	protected $conexion;

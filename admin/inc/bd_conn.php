@@ -1,6 +1,6 @@
 <?php
 class Conectar{
-	protected $dbhost 		= 'localhost';
+	protected $dbhost 		= 'mysql.tumovida.com.uy';
 	protected $dbusuario 	= 'tumovida_bd';
 	protected $dbpass 		= '1123581321';
 	protected $conexion;
@@ -102,8 +102,8 @@ class imageUpload
 	public function __construct($file, $tipo)
 	{
 		$this->src 		= $file;
-		$this->obj 		= $this->upload($this->src);
 		$this->ubicacion= $tipo;
+		$this->obj 		= $this->upload($this->src);
 		return $this->obj;
 	}
 	public function __tostring()

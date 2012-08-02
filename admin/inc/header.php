@@ -91,7 +91,7 @@
            </ul>
          </li>
          <li class="nav-item">
-           <a href="#"><img src="img/nav/tb.png" alt="" /><p>Locales</p></a>
+           <a href="locales.php"><img src="img/nav/tb.png" alt="" /><p>Locales</p></a>
          </li>
          <li class="nav-item">
            <a href="fotos.php"><img src="img/nav/gal.png" alt="" /><p>Fotos</p></a>

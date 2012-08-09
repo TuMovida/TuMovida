@@ -1,13 +1,16 @@
 <?php
+ob_start("ob_gzhandler");
 session_start();
-include_once '../inc/mapa.php';
 require_once '../inc/conectar.php';
 require_once '../inc/paginas.class.php';
 require_once '../inc/usuario.class.php';
 require_once '../inc/comentarios.class.php';
 
-$id = $_GET['id'];
-
+if(isset($_GET['id']) && is_numeric($_GET['id'])){
+	$id = $_GET['id'];
+}else{
+	die("Formato de URL incorrecto");
+}
 $c = new Conectar();
 $c->TM();
 $promoArray = $c->query("SELECT * FROM promociones WHERE id=".$id);

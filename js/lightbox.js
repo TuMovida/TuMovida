@@ -20,8 +20,8 @@ var dialog = {
 		});
 	},
 	create: function(){
-		var docHeight = $('body').css('height');
-		var div = "<div class='overlayer' style='height: "+docHeight+"; display: none;'></div>";
+		var docHeight = $(document).height();
+		var div = "<div class='overlayer' style='height: "+docHeight+"px; display: none;'></div>";
 		$('body').append(div);
 		$(".overlayer").fadeIn(350);
 	},
@@ -51,5 +51,14 @@ var dialog = {
 		var self = this;
 		self.init();
 		self.window(html);
+		if(arguments[1] === true){
+			$(".dialog-content").append("<div class='photoDialog-close' rel='Pulsa ESC para salir'></div>");
+			$(".photoDialog-close").click(function(e){
+				dialog.destroy();
+			});
+		}
 	}
 };
+$(document).scroll(function(){
+	$(".dialog-content").center();
+});

@@ -57,9 +57,38 @@ class sendMail extends Conectar
 	 	$this->mensaje = $mensaje;
 	 	$this->sendIt();					 		
 	}
-	public function sendPass()
+	public function sendPassAuth($code)
 	{
-
+		$asunto 	= 	"Confirmar solicitud de nueva contraseña";
+		$mensaje 	= 	"<div stlye='font-family: 'Trebuchet MS', sans-serif;'>
+						Haz solicitado un cambio de contraseña en ¡TuMovida!.<br>
+						Si la solicitud no fue realizada por usted, no considere este mail.<br>
+						<br>
+						Para obtener su nueva contraseña <a href='http://tumovida.com.uy/info/recuperar_pass?m=".$mail."&code=".$code."'>haz click aqui</a>.<br>
+						Si no puede acceder por medio del link, copie y pegue el siguiente código en
+						<br>
+						Código: <b>".$code."</b><br>
+						<br>
+						<br>
+						Atentamente, <br>
+						el equipo de ¡TuMovida!.
+						</div>"; 
+		$this->asunto  = $asunto;
+		$this->mensaje = $mensaje;
+		$this->sendIt(); 
+	}
+	public function sendPass($newPass)
+	{
+		$asunto 	= "Su nueva contraseña en ¡TuMovida!";
+		$mensaje 	= 	"<div stlye='font-family: 'Trebuchet MS', sans-serif;'>
+						el cambio de contraseña fue realizado con éxito. Desde ahora su nueva 
+						contraseña es: ".$newPass."
+						Attentamente, <br>
+						el equipo de ¡TuMovida!.
+						</div>";
+		$this->asunto  = $asunto;
+		$this->mensaje = $mensaje;
+		$this->sendIt();
 	}
 	public function mensajePrivado($emitor, $mensaje)
 	{

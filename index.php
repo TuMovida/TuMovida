@@ -17,7 +17,6 @@ include "inc/comenta.php";
 if (isLogged()){
 	$user = new Usuario($_SESSION['idusuario']);
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="es" class="no-js">
@@ -25,7 +24,7 @@ if (isLogged()){
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>¡TuMovida!</title>
 <link rel="shortcut icon" href="favicon.ico">
-<link href="css/compile.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/compile.min.css?v=1" rel="stylesheet" type="text/css"/>
 <link href="css/jquery.jscrollpane.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDcJm10cJjXQ6cZvCH4c25x5BhZCRbvY48&sensor=true"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -33,12 +32,12 @@ if (isLogged()){
 <script type="text/javascript" src="js/modernizr.min.js"></script>
 <script type="text/javascript" src="js/swapImg.js"></script>
 <script type="text/javascript" src="js/setPos.js"></script>
-<script type="text/javascript" src="js/destacados.js"></script>
+<script type="text/javascript" src="js/destacados.js?v=2"></script>
 <script type="text/javascript" src="js/qtip/jquery.qtip.min.js"></script>
 <script type="text/javascript" src="js/lightbox.js"></script>
 <script type="text/javascript" src="js/jquery.address-1.4.min.js"></script>
 <link href="js/qtip/jquery.qtip.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="js/navegacion.js"></script>
+<script type="text/javascript" src="js/navegacion.js?v=3"></script>
 <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
 <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="js/jquery.lazyloading.min.js"></script>
@@ -47,11 +46,6 @@ if (isLogged()){
 <script type="text/javascript" src="js/notificaciones.js"></script>
 <script type="text/javascript" src="js/photoDisplay.js"></script>
 <script type="text/javascript" src="js/slider.js"></script>
-<style>
-.slide_sumate { position:relative; height:94px; width:90px;}
-.slide_sumate a{display: block; position:absolute; left:0; top:0;}
-.slide_sumate img { border-radius: 10px; }
-</style>
 <script type="text/javascript">
 $(function(){
 	$('.slide_sumate a:gt(0)').hide();
@@ -60,8 +54,9 @@ $(function(){
 $(document).on("ready",function(){	
 	//photoDisplay.open("ajax/photoWelcome.php?indexInterface");
 	$("#formulario-comentarios").submit(function(e){e.preventDefault(); $(".botonEnviarComentarios").attr("disabled", "disabled"); $.post("ajax/enviarComentarioVisitas.php",$("#formulario-comentarios").serialize(),function(res){if (res == 1){$(".botonEnviarComentarios").attr("disabled", "false");	$("#comentarios").load("index.php #comentarios");}});}); 
-	<? if(isLogged() && (!$user->getCI())): ?> dialog.show("<div class='formulario'><label>Aún no haz ingresado una CI.<br />Para realizar compras debes tener una. Puedes hacerlo ahora <a href='#!/editarPerfil'>editando tu perfil</a></label></div>");
-<? endif; ?>
+	<? if(isLogged() && (!$user->getCI())): ?> 
+	dialog.show("<div class='formulario'><label>Aún no haz ingresado una CI.<br />Para realizar compras debes tener una. Puedes hacerlo ahora <a href='#!/editarPerfil'>editando tu perfil</a></label></div>");
+	<? endif; ?>
 });
 </script>
 </head>
@@ -106,7 +101,7 @@ $(document).on("ready",function(){
 	foreach ($json as $destacado):
 	?>
 	<div class="destacado">
-		<div class="destacado_imagen" style="background: url('images/destacados/<?=$destacado['Imagen']?>');"></div>
+		<div class="destacado_imagen" style="background: url('images/thumb.php?w=1366&h=271&src=http://img.tumovida.com.uy/destacados/<?=$destacado['Imagen']?>');"></div>
 		<div class="destacado_descripcion">
 		<span class='destacado_titulo'><?=$destacado['Titulo']?></span>
 		<span style='font-size: 12px;'><?=$destacado['Descripcion']?></span>

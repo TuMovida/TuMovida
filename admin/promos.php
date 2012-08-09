@@ -115,13 +115,12 @@ $(document).ready(function(){
 </script>
 <div class="content container_12">
     <?php if (isset($_GET['success'])): ?>
-  <div class="ad-notif-info grid_12"><p>Promo cargada con éxito</p></div>
+  <div class="ad-notif-info grid_12"><p>Evento cargado con exito</p></div>
     <?php endif; ?>
     <?php if ($lista): ?> 
     <div class="box grid_12">
-        <div class="box-head"><h2>Lista de promociones</h2></div>
+        <div class="box-head"><h2>Lista de eventos</h2></div>
         <div class="box-content no-pad">
-            <?php if(isset($buff)): ?>
             <table class="display" id="dt3">
                 <thead>
                     <tr>
@@ -142,9 +141,6 @@ $(document).ready(function(){
                  <?php endforeach; ?>
                 </tbody>
           </table>
-        <?php else: ?>
-        <p>No hay promociones <? if($_GET['listado'] == "activas") echo "activas"; ?></p>
-        <?php endif; ?>
         </div>
     </div>
     <?php else: ?>

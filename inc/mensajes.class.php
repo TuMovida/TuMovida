@@ -56,7 +56,7 @@ class getMensajes extends UsuarioActions
 		$conn = $this->conn;
 		if (!isset($this->propitaryID)) die("No hay usuario remitente definido");
 		$userID = $this->propitaryID;
-		$query = $conn->query("SELECT idEmisor, idRemitente, Texto, Visto FROM mensajes WHERE idRemitente=".$userID);
+		$query = $conn->query("SELECT id, idEmisor, idRemitente, Texto, Visto FROM mensajes WHERE idRemitente=".$userID);
 		if(!$query)
 			throw new Exception($this->Error(2) ." ".mysql_error());
 		if (mysql_num_rows($query) < 1)
@@ -78,8 +78,8 @@ class getMensajes extends UsuarioActions
 }
 class getMensaje extends UsuarioActions
 {
-	private $conn;
-	public function __construct()
+	private $conn, $mensaje;
+	public function __construct($msjID)
 	{
 		if ($this->isLogged()){
 			$conn = new Conectar();
@@ -87,7 +87,7 @@ class getMensaje extends UsuarioActions
 				throw new Exception($this->Error(1));
 			$this->conn = $conn;
 			$connTM = $conn->Usuarios();
-			return $this->getMsj();			
+			return $this->getMsj($msjID);
 		}else{
 			throw new Exception($this->Error(0));
 			return false;
@@ -104,6 +104,7 @@ class getMensaje extends UsuarioActions
 		if (mysql_num_rows($query) < 1)
 			throw new Exception($this->Error(5));
 		$res = mysql_fetch_assoc($query);
+		$this->mensaje = $res;
 		if (isset($returnJSON) && $returnJSON)
 			return json_encode($res);
 		return $res;
@@ -116,6 +117,22 @@ class getMensaje extends UsuarioActions
 		$error[4] = "Hubo un error leyendo el mensaje";
 		$error[5] = "No hay mensaje";
 		return $error[$code];
+	}
+	public function getTexto()
+	{
+		return $this->mensaje["Texto"];
+	}
+	public function getEmisor()
+	{
+		return $this->mensaje["idEmisor"];
+	}
+	public function getRemitente()
+	{
+		return $this->mensaje["idRemitente"];
+	}
+	public function getVisto()
+	{
+		return $this->mensaje["Visto"];
 	}
 }
 ?>

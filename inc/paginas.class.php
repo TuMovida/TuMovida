@@ -162,7 +162,7 @@ class evento extends pagina{
 	}
 	public function getPromo()
 	{
-		if ($this->pagina['id_promo'] != null)
+		if (isset($this->pagina['id_promo']) && $this->pagina['id_promo'] != null)
 			return $this->pagina['id_promo'];
 		else return false;
 	}
@@ -183,7 +183,7 @@ class evento extends pagina{
  * Local
  */
 class local extends pagina{
-	public $id;
+	public $id, $eventos, $eventosFuturos;
 	private $coneccion;
 	
 	private function existenFotos($id, $conexion){
@@ -230,6 +230,57 @@ class local extends pagina{
 			return false;
 		}
 		
+	}
+	public function getEventos(){
+		$localID = $this->pagina['id'];
+		$query = $this->query("SELECT id, Nombre, Fecha FROM eventos WHERE idLocal=".$localID);
+		if(!$query || mysql_num_rows($query) < 1){
+			return false;
+		}
+		$this->eventos = mysql_fetch_assoc($query);
+		return $this->eventos;
+	}
+	public function getEventosFuturos(){
+		if(isset($this->eventos) && $this->eventos != ""){
+			foreach($this->eventos as $evento){
+				if(date("Y-m-d h:i:s", strtotime($evento['Fecha'])) > date("Y-m-d h:i:s")){
+					$eventosFuturos[] = $evento;
+				}
+			}
+		}else{
+			$localID = $this->pagina['id'];
+			$query = $this->query("SELECT id, Nombre, Fecha FROM eventos WHERE idLocal=".$localID." AND Fecha > NOW()");
+			if(!$query || mysql_num_rows($query) < 1){
+				return false;
+			}
+			$this->eventosFuturos = mysql_fetch_assoc($query);
+			return $this->eventosFuturos;
+		}
+		if(isset($eventosFuturos)){
+			return $eventosFuturos;
+		}
+		return false;
+	}
+	public function getEventosPasados(){
+		if(isset($this->eventos) && $this->eventos != ""){
+			foreach($this->eventos as $evento){
+				if(date("Y-m-d h:i:s", strtotime($evento['Fecha'])) < date("Y-m-d h:i:s")){
+					$eventosPasados[] = $evento;
+				}
+			}
+		}else{
+			$localID = $this->pagina['id'];
+			$query = $this->query("SELECT id, Nombre, Fecha FROM eventos WHERE idLocal=".$localID." AND Fecha < NOW()");
+			if(!$query || mysql_num_rows($query) < 1){
+				return false;
+			}
+			$this->eventosFuturos = mysql_fetch_assoc($query);
+			return $this->eventosFuturos;	
+		}
+		if(isset($eventosPasados)){
+			return $eventosPasados;
+		}
+		return false;
 	}
 }
 
@@ -295,9 +346,15 @@ class iPag extends Conectar
 		$this->Conexion();
 		$this->TM();
 		$query = $this->query("SELECT * FROM ".$iPag." WHERE id=".$id);
-		if (!$query)
+		if (!$query){
+			throw new Exception("Error Processing Request", 1);
 			return false;
+		}
 		$array = mysql_fetch_assoc($query);
+		if(!is_array($array)){
+			throw new Exception("Error obteniendo datos", 2);
+		}
+		$this->pagArray = $array;
 		return $array;
 	}
 	public function getID()
@@ -413,6 +470,22 @@ class iPromo extends iPag
 	public function getActivo()
 	{
 
+	}
+}
+class iLista extends iPag
+{
+	public function __construct($id)
+	{
+		$this->id = $id;
+		return $this->getData("listas");
+	}
+	public function getCapacidad()
+	{
+		return $this->pagArray["Disponibles"];
+	}
+	public function getRestantes()
+	{
+		return $this->pagArray["Disponibles"];
 	}
 }
 class Asistencias extends Conectar

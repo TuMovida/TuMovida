@@ -30,7 +30,9 @@
 	font-size: 17px;
 	font-variant: small-caps;
 	padding: 5px 2px 0px 0px;
+	position: relative;
 	margin: 5px 0px 5px 0px;
+	z-index: 7;
 }
 #usuario .right_side .user_information .user_information_row{
 	display: block;
@@ -152,4 +154,57 @@ span.conjunto-vacio{
 	text-shadow: rgba(255,255,255,0.5) 0 5px 6px;
 	margin: 0px;
 	text-align: left;
+}
+
+/* Extras para Bandas y DJ's */
+#usuario .usuarios_albums{
+	display: block;
+}
+#usuario .usuarios_albums .usuario_albums_borde{
+	border: 1px solid #CCC;
+	border-radius: 2px;
+	display: inline-block;
+}
+#usuario .usuarios_albums .usuario_albums_album{
+	border: 4px solid white;
+	border-radius: 4px;
+	display: block;
+	height: 100px;
+	position: relative;
+	overflow: hidden;
+	width: 100px;
+}
+#usuario .usuarios_albums .usuario_albums_album .usuario_albums_album_imagen{
+	max-height: 120px;
+	min-height: 100px;
+	min-width: 100px;
+}
+#usuario .usuarios_albums .usuario_albums_album .usuario_albums_album_nombre{
+	background: rgba(255, 255, 255, 0.4);
+	bottom: 0;
+	color: white;
+	display: block;
+	font-size: 12px;
+	padding: 2px;
+	position: absolute;
+	text-align: center;
+	text-shadow: 1px 1px 1px #333;
+	width: 100%;
+}
+#usuario .usuarioEx_contentInformation{
+	color: #666;
+	font-size: 14px;
+	padding: 1px;
+}
+.perfilExtendid-editarSeccion{
+	color: #06BBFF;
+	font-size: 13px;
+	font-variant: normal;
+	font-weight: normal;
+	top: 4px;
+	right: 10px;
+	position: absolute;
+}
+.comentariosPerfilEx .nuevoComentario{
+	background: white;
 }

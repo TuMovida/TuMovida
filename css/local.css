@@ -69,6 +69,12 @@
 #local div.local-rightSide .descripcionContent{
 	/*font-size: 10px;*/
 }
+#local div.local-rightSide .staticMap{
+	cursor: pointer;
+	display: block;
+	margin: 10px auto 10px auto;
+	text-align: center;
+}
 #mostrarMapa{
 	background: url("../images/map_ico.png");
 	display: inline-block;

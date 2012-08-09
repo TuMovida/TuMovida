@@ -39,6 +39,10 @@ var ir = {
 			this.cargar("promo", id);
 			this.ocultar("destacados");
 		}
+		if(localizacion === "lista"){
+			this.cargar("lista", id);
+			this.ocultar("destacados");
+		}
 		if(localizacion === "usuario"){
 			this.cargar("usuario", id);
 			this.ocultar("destacados");
@@ -183,6 +187,11 @@ $.address.change(function (event){
 	if(/^\/promo\/[0-9]+/.test($.address.value()) === true){
 		var id = $.address.value().replace("/promo/", "");
 		nav = ir.a("promo", id);
+	}
+	//Listas:
+	if(/^\/lista\/[0-9]+/.test($.address.value()) === true){
+		var id = $.address.value().replace("/lista/", "");
+		nav = ir.a("lista", id);
 	}
 	//Usuarios:
 	if(/^\/usuario\/[0-9]+/.test($.address.value()) === true){

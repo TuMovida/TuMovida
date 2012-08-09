@@ -67,7 +67,7 @@ if ($eventoArray)
 <h2><img src="images/ico_eventos.png"/><?=$evento->nombre();?> <strong class="slash b">/</strong><strong class="slash r">/</strong><strong class="slash y">/</strong></h2>
 <div id="evento">
 	<div class="evento-leftSide">
-		<img src="images/eventos/<?=$evento->imagen();?>" />
+		<img src="images/eventos/<?=$evento->imagen();?>" class="imagenPerfil"/>
 	</div>
 	<div class="evento-rightSide">
 		<div class="evento-menuAcciones">
@@ -173,6 +173,11 @@ if ($eventoArray)
 		$(".compartir").click(function(e){
 			var sharer = "https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent("http://www.tumovida.com.uy/facebook_request.php?t=eventos&id=<?=$id?>")+"&t="+encodeURIComponent(document.title);
 			window.open(sharer, this.target, 'width=670,height=300');
+		});
+		$(".imagenPerfil").click(function(e){
+			var maxHeight = $(window).height() - 40+"px";
+			var maxWidth  = $(window).width() - 40+"px";
+			dialog.show("<img src='images/eventos/<?=$evento->imagen();?>' style='padding: 4px;padding-bottom:0px;max-height:"+maxHeight+";max-width:"+maxWidth+";'/>", true);
 		});
 		</script>
 	<?php include 'comentarios.php';?>

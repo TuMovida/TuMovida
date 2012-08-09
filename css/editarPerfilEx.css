@@ -1,0 +1,63 @@
+#editarPerfilEx{
+	height: 450px;
+	width: 710px;
+}
+.editarPerfilExMenuIzquierda{
+	border-right: 1px solid rgb(230,230,230);
+	display: inline-block;
+	height: 100%;
+	vertical-align: top;
+	width: 230px;
+}
+.editarPerfilExMenuIzquierda ul{
+	color: rgb(230, 230, 230);
+	padding: 4px 0;
+}
+.editarPerfilExMenuIzquierda ul li{
+	border-left: 5px solid;
+	display: block;
+	padding: 10px;
+}
+.editarPerfilExMenuIzquierda ul li:hover{
+	color: rgb(6, 187, 255);
+	cursor: pointer;
+}
+.editarPerfilExMenuIzquierda ul li.active{
+	color: #333;
+}
+.editarPerfilExContent{
+	display: inline-block;
+	height: 100%;
+	padding: 2px 5px 2px 5px;
+	overflow: auto;
+	vertical-align: top;
+	width: 460px;
+}
+.editarPerfilExContent #updateDjProfile label{
+	border-bottom: 1px solid;
+	display: block;
+	color: rgb(170, 170, 170);
+	margin-bottom: 10px;
+	padding: 10px 5px 2px 0px;
+}
+.editarPerfilExContent .editarPerfilExBackInput{
+	background: whiteSmoke;
+	border-radius: 2px;
+	display: block;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+.editarPerfilExContent .editarPerfilExBackInput textarea,
+.editarPerfilExContent .editarPerfilExBackInput input[type='text']{
+	border: none;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	margin: 0;
+	padding: 4px;
+	width: 100%;
+}
+.editarPerfilExContent .editarPerfilExBackInput textarea{
+	font-family: 'Helvetica', 'arial', sans-serif;
+	height: 340px;
+}

@@ -1,14 +1,20 @@
 <?php
-	if (isset($evento)){
-		$page = "evento";
-		$type = "e";
-	}elseif(isset($local)){
-		$page = "local";
-		$type = "l";
-	}elseif(isset($promo)){
-		$page = "promo";
-		$type = "p";
-	}
+if (isset($evento)){
+	$page = "evento";
+	$type = "e";
+}elseif(isset($local)){
+	$page = "local";
+	$type = "l";
+}elseif(isset($promo)){
+	$page = "promo";
+	$type = "p";
+}elseif(isset($dj)){
+	$page = "dj";
+	$type = "dj";
+}elseif(isset($lista)){
+	$page = "lista";
+	$type = "lt";
+}
 ?>
 <div id="comentariosPagina">
 	<div class="nuevoComentario">
@@ -38,18 +44,35 @@
 			if (res !== "")
 				alert(res);
 			$(".showcomments").load("ajax/<?=$page?>.php?id=<?=$id?>"+" .showcomments");
+			$(".nuevoComentario textarea").val("");
 		});
 	});
 	</script>
 	<div class="showcomments">
 		<?php
 		try{
-			$comentarios = new comentarios($type."_".$$page->pagina['id']);
+			if($page == "dj"){
+				$comentarios = new comentarios($type."_".$perfil->getID());
+			}elseif($page == "lista"){
+				$comentarios = new comentarios($type."_".$lista->getID());
+			}else{
+				$comentarios = new comentarios($type."_".$$page->pagina['id']);	
+			}
 			if ($comentarios){
-				$res =  $comentarios->getComments($type."_".$$page->pagina['id']);
+				if($page == "dj" ){
+					$res =  $comentarios->getComments($type."_".$perfil->getID());
+				}elseif($page == "lista"){
+					$res =  $comentarios->getComments($type."_".$lista->getID());
+				}else{
+					$res =  $comentarios->getComments($type."_".$$page->pagina['id']);
+				}
 				$comments = json_decode($res, true);
-				$asistencias = new Asistencias;
-				$asis = $asistencias->getAsistencias($id);
+				if($page == "evento"){
+					$asistencias = new Asistencias;
+					$asis = $asistencias->getAsistencias($id);	
+				}else{
+					$asis = false;
+				}
 				if (is_array($asis)){
 					$asisPlusComments = array_merge($comments, $asis);	
 				}else{

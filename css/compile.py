@@ -197,6 +197,7 @@ def main():
 		"comenta.css", 
 		"comentarios.css", 
 		"editarPerfil.css", 
+        "editarPerfilEx.css",
 		"evento.css", 
 		"eventos.css", 
 		"fotos.css", 

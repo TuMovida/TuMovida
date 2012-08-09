@@ -16,6 +16,11 @@
     -moz-transition: all 0.25s ease-in-out;	
     width: 170px;
 }
+.comenta_entrada .comenta_mensaje a{
+	border-bottom: 1px dotted #05b2f3;
+	color: #05b2f3;
+	text-decoration: none;
+}
 .comenta_entradaDestacada .comenta_mensaje{
 	color: #05b2f3;
 }

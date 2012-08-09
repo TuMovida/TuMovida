@@ -1,5 +1,4 @@
 <?php
-
 class comenta extends Conectar
 {
 	private $coments;
@@ -12,6 +11,18 @@ class comenta extends Conectar
 			//ERROR
 		}else{
 			while($comentario = mysql_fetch_assoc($this->coments)){
+				//Sistema de etiquetas
+				$patron = "/@[\\[](evento|promo|local|usuario)_([0-9]+)[]]/";
+				if(preg_match($patron, $comentario["Mensaje"], $match)){
+					$id 	= $match[2];
+					try{
+						$evento = new iEvento($id);
+						$sus 	= "<a href='#!/$1/$2'>".$evento->getNombre()."</a>";
+						$comentario["Mensaje"] = preg_replace($patron, $sus, $comentario["Mensaje"]);
+					}catch(Exception $e){
+						// echo $e->getMessage();
+					}
+				}
 				$return[] = $comentario;
 			}
 			return json_encode($return);

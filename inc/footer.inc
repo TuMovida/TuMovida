@@ -6,7 +6,7 @@
 			<h3>La Empresa</h3>
 			<ul>
 				<li>Contacto</li>
-				<li>Quienes somos</li>
+				<li><a href="blog">Prensa / Blog</a></li>
 				<li><a href="sumate">Sumate a TuMovida</a></li>
 			</ul>
 		</div>
@@ -14,7 +14,7 @@
 			<h3>Conocé más</h3>
 			<ul>
 				<li><a target="_blank" href="http://www.youtube.com/watch?v=1gkd3bSVESE">Como funciona TuMovida</a></li>
-				<li><a href="info/terminos-y-condiciones.html">Terminos y condiciones</a></li>
+				<li><a href="info/terminos_y_condiciones">Terminos y condiciones</a></li>
 			</ul>
 		</div>
 	</div>

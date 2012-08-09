@@ -7,9 +7,13 @@
 	display: block;
 	/*padding: 10px;*/
 	padding: 0;
+	position: relative;
 	height: 126px;
 	text-align: left;
 	overflow: hidden;
+}
+#main #promociones li:last-of-type{
+	border-bottom: none;
 }
 #promociones li .promoA, 
 #promociones li .promoB, 
@@ -26,6 +30,7 @@
 #promociones li .promoC{
 	position: absolute; 
 	right: 0;
+	top: 0;
 	width: 100px;
 }
 #main #promociones li .promoImagen{

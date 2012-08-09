@@ -240,7 +240,8 @@ strong.y{
 	border-radius: 10px;
 	color: black;
 	margin: 0px 0px 4px 4px;
-	min-height: 685px;
+	min-height: 679px;
+	/*min-height: 685px;*/
 	/*max-height: 680px;*/
 	padding: 0px;
 	position: relative;
